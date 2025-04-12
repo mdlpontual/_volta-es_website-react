@@ -1,10 +1,19 @@
-@use "../ui/HomePage.scss";
 @use "../ui/pages/NotFoundPage.scss";
+@use "../ui/pages/home-page/HomePage.scss";
+@use "../ui/pages/home-page/components/about/About.scss";
+@use "../ui/pages/home-page/components/footer/Footer.scss";
+@use "../ui/pages/home-page/components/infos/Infos.scss";
+@use "../ui/pages/home-page/components/jumbotron/Jumbotron.scss";
+@use "../ui/pages/home-page/components/projects-nav-menu/ProjectNavMenu.scss";
+@use "../ui/pages/projects/Project.scss";
+@use "../ui/pages/projects/components/description/ProjectDescription.scss";
+@use "../ui/pages/projects/components/footer/ProjectFooter.scss";
+@use "../ui/pages/projects/components/jumbotron/ProjectJumbotron.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 * {
     font-family: "Inter", Helvetica, sans-serif;
     font-weight: bolder;
-    color: white;
+    //color: white;
 }
