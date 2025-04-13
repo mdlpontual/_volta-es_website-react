@@ -1,1 +1,17 @@
 @use "../../../style" as *;
+
+header {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: fit-content;
+}
+main {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: fit-content;
+}
+footer {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: fit-content;
+}
