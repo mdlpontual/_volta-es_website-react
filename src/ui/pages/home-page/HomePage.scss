@@ -2,16 +2,16 @@
 
 header {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
+    border: $gb-con_5-dsh-mag;
     height: fit-content;
 }
 main {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
+    border: $gb-con_5-dsh-mag;
     height: fit-content;
 }
 footer {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
+    border: $gb-con_5-dsh-mag;
     height: fit-content;
 }

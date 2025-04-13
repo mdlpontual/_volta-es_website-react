@@ -8,15 +8,15 @@ import Footer from "./components/footer/Footer"
 function HomePage() {
   return (
     <>
-      <header className="container-fluid">
+      <header>
         <Jumbotron />
       </header>
-      <main className="container-fluid">
+      <main>
         <About />
         <Infos />
         <ProjectsNavMenu />
       </main>
-      <footer className="container-fluid">
+      <footer>
         <Footer />
       </footer>
     </>

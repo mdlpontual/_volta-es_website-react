@@ -1,1 +1,14 @@
 @use "../../../../../style" as *;
+
+#projectNavMenuCon {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: 200vh;
+    #projectNavMenuRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

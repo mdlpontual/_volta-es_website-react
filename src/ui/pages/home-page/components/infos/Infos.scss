@@ -1,1 +1,40 @@
 @use "../../../../../style" as *;
+
+#infoNavMenuCon {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: 100vh;
+    #infoNavMenuRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}
+#infosCon {
+    @include box-reset-default;
+    border: $gb-con_5-sol-red;
+    height: 300vh;
+    #prjPhasesRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: calc(100% / 3);
+        align-items: center;
+        text-align: center;
+    }
+    #howItWorksRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: calc(100% / 3);
+        align-items: center;
+        text-align: center;
+    }
+    #letsTalkRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-ylw;
+        height: calc(100% / 3);
+        align-items: center;
+        text-align: center;
+    }
+}
