@@ -35,7 +35,39 @@
         #jumboColText {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
-            height: 100%
+            height: 100%;
+            #voltaJumboLogo {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                justify-content: end;
+                height: 25%;
+                #voltaLogo {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    img {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        height: 100px;
+                        margin: 50px;
+                    }
+                }
+            }
+            #jumboText {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                height: 50%;
+                align-items: center;
+                padding: 50px;
+                #missionTexts {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    border-right: 1px solid white;
+                    padding: 10px;
+                    height: fit-content;
+                    text-align: end;
+                    font-weight: 100;
+                }
+            }
         }
     }
 }

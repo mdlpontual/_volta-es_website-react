@@ -19,7 +19,8 @@ const IMG = {
 
     //incons
     mailIcon: new URL('./images/icons/mail-white.png', import.meta.url).href,
-    menuIcon: new URL('./images/icons/menu-white.png', import.meta.url).href,
+    menuIconWhite: new URL('./images/icons/menu-white.png', import.meta.url).href,
+    menuIconOrange: new URL('./images/icons/menu-orange.png', import.meta.url).href,
     zapIcon: new URL('./images/icons/whatsapp-white.png', import.meta.url).href,
     phasesIcon_White: new URL('./images/icons/info-cards/timeline-white.png', import.meta.url).href,
     phasesIcon_Color: new URL('./images/icons/info-cards/timeline-color.png', import.meta.url).href,
