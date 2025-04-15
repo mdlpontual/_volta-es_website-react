@@ -7,6 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 100%;
+    position: relative;
     #jumboRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
@@ -70,4 +71,27 @@
             }
         }
     }
+}
+
+#menuOpen {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(7, 68, 93, 1);
+    transition: width 0.5s ease-in-out;
+    overflow: hidden;
+}
+#menuClosed {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    width: 0%; 
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: $voltaBlue;
+    transition: width 0.5s ease-in-out 0.25s;
+    overflow: hidden; 
 }

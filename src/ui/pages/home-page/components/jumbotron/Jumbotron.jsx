@@ -24,20 +24,19 @@ function Jumbotron() {
   return (
     <>
       <section id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${IMG.jumbotronBackground})`}}>
-        <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
-          {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
-        </div>
         <div id="jumboRow" className="row">
           <div id="jumboColMenu" className="col">
+            <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
+              {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+            </div>
             <div id="menuIconRow" className="row">
               <div id="menuIcon" className="col-auto">
-                <img  
-                   className="col-auto btn" 
-                   src={symbolSrc}
-                   onMouseEnter={handleMouseEnter}
-                   onMouseLeave={handleMouseLeave}
-                   onClick={() => setIsMenuOpen(true)}
-                   alt="ícone Menu"/>
+                <img className="col-auto btn" 
+                     src={symbolSrc}
+                     onMouseEnter={handleMouseEnter}
+                     onMouseLeave={handleMouseLeave}
+                     onClick={() => setIsMenuOpen(true)}
+                     alt="ícone Menu"/>
               </div>
             </div>
           </div>
