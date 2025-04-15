@@ -2,30 +2,64 @@
 
 #logoCon {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
-    height: 100vh;
+    //border: $gb-con_5-sol-red;
+    height: 110vh;
     #logoRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
+        //border: $gb-row_5-sol-ylw;
         height: 100%;
         align-items: center;
         text-align: center;
+        #logoCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 200px;
+            }
+        }
     }
 }
 #aboutCon {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
-    height: 200vh;
+    //border: $gb-con_5-sol-red;
+    height: 220vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
     #aboutRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
+        //border: $gb-row_5-sol-ylw;
         height: 50%;
-        align-items: center;
-        text-align: center;
+        #aboutCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            align-content: center;
+            #aboutVoltaRow {
+                @include box-reset-default;
+                border: $gb-row_5-sol-org;
+                height: 50%;
+                #aboutVolta {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                }
+            }
+            #aboutSustRow {
+                @include box-reset-default;
+                border: $gb-row_5-sol-org;
+                height: 50%;
+                #aboutSust {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                }
+            }
+        }
     }
     #videoRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
+        //border: $gb-row_5-sol-ylw;
         height: 50%;
         align-items: center;
         text-align: center;
