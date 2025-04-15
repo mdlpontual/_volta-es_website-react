@@ -29,25 +29,25 @@ function Menu({ setIsMenuOpen }) {
               <nav id="menuNav" className="row">
                     <ul id="menuList" className="col">
                         <li>
-                            <h3><a href="#aboutCon">SOBRE A VOLTA</a></h3>
+                            <h2 id="navLi"><a href="#aboutCon">SOBRE A VOLTA</a></h2>
                         </li>
                         <li>
-                            <h3><a href="#infoNavMenuCon">SOBRE ENERGIA SOLAR</a></h3>
-                            <h4 id="projLi"><a href="#prjPhasesRow">ETAPAS DO PROJETO</a></h4>
-                            <h4 id="projLi"><a href="#howItWorksRow">COMO FUNCIONA?</a></h4>
+                            <h2 id="navLi"><a href="#infoNavMenuCon">SOBRE ENERGIA SOLAR</a></h2>
+                            <h2 id="projLi"><a href="#prjPhasesRow">- ETAPAS DO PROJETO</a></h2>
+                            <h2 id="projLi"><a href="#howItWorksRow">- COMO FUNCIONA?</a></h2>
                         </li>
                         <li>
-                            <h3><a href="#projectNavMenuCon">PROJETOS</a></h3>
-                            <Link to={'/'}><h4 id="projLi">FAZENDA DE CAMARÕES</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">INDUSTRIA EM CAMARAGIBE</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">CONDOMÍNIO EM MARIA FARINHA</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">PROJETOS EM ALDEIA</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">PROJETOS EM GRAVATÁ</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">SÍTIO TANQUE</h4></Link>
-                            <Link to={'/'}><h4 id="projLi">OUTROS PROJETOS</h4></Link>
+                            <h2 id="navLi"><a href="#projectNavMenuCon">PROJETOS</a></h2>
+                            <Link to={'/'}><h2 id="projLi">- FAZENDA DE CAMARÕES</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- INDUSTRIA EM CAMARAGIBE</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- CONDOMÍNIO EM MARIA FARINHA</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- PROJETOS EM ALDEIA</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- PROJETOS EM GRAVATÁ</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- SÍTIO TANQUE</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- OUTROS PROJETOS</h2></Link>
                         </li>
                         <li>
-                            <h3><a href="#hpFooterCon">CONTATO</a></h3>
+                            <h2 id="navLi"><a href="#hpFooterCon">CONTATO</a></h2>
                         </li>
                     </ul>
                 </nav>

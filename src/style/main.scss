@@ -9,11 +9,12 @@
 @use "../ui/pages/projects/components/description/ProjectDescription.scss";
 @use "../ui/pages/projects/components/footer/ProjectFooter.scss";
 @use "../ui/pages/projects/components/jumbotron/ProjectJumbotron.scss";
+@use "../style" as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 * {
     font-family: "Inter", Helvetica, sans-serif;
-    font-weight: bolder;
+    font-weight: 500;
     color: white;
 }

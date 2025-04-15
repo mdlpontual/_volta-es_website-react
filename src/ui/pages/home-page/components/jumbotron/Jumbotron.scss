@@ -67,6 +67,7 @@
                     height: fit-content;
                     text-align: end;
                     font-weight: 100;
+                    font-size: 1.1rem;
                 }
             }
         }
@@ -80,7 +81,7 @@
     width: 50%;
     position: absolute;
     z-index: 3;
-    background-color: rgba(7, 68, 93, 1);
+    background-color: rgba(25, 25, 25, 0.75);
     transition: width 0.75s ease-in-out;
     overflow: hidden;
     text-align: start;
@@ -96,7 +97,6 @@
             margin: 0px 30px -30px 50px;
             overflow: hidden;
             text-wrap: nowrap;
-            -webkit-text-stroke: 1.2px white;
             #menuList {
                 @include box-reset-default;
                 //border: $gb-col_2-dsh-cyn;
@@ -104,34 +104,29 @@
                 li {
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
-                    margin-bottom: 10px;
                     a {
                         text-decoration: none;
                         color: inherit; 
                     }
-                    h3 {
+                    #navLi {
                         @include box-reset-default;
                         //border: $gb-col_2-dsh-cyn;
                         text-overflow: ellipsis;
                         overflow: hidden;
-                        margin-bottom: 7px;
                         a {
                             text-decoration: none;
                             color: inherit; 
-                            -webkit-text-stroke: 0px white;
                         }
                     }
-                    h4 {
+                    #projLi {
                         @include box-reset-default;
                         //border: $gb-col_2-dsh-blu;
                         text-overflow: ellipsis;
                         overflow: hidden;
-                        padding-left: 25px;
-                        margin-bottom: 7px;
+                        padding-left: 0px;
                         a {
                             text-decoration: none;
                             color: inherit; 
-                            -webkit-text-stroke: 0px white;
                         }
                     }
                 }
@@ -139,7 +134,6 @@
             h2:hover {
                 color: $sunOrange;
                 cursor: pointer;
-                -webkit-text-stroke: 1.5px $sunOrange;
                 transition: color 0.2s ease-in-out;
             }
         }
@@ -189,7 +183,7 @@
     height: 100%;
     position: absolute;
     z-index: 3;
-    background-color: $voltaBlue;
+    background-color: rgba(25, 25, 25, 0.75);
     transition: width 0.75s ease-in-out 0.25s;
     overflow: hidden; 
 }
