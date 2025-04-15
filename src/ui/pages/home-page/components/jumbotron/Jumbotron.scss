@@ -101,27 +101,38 @@
                 @include box-reset-default;
                 //border: $gb-col_2-dsh-cyn;
                 list-style: none;
-                padding: 25px 0 0 0;
                 li {
                     @include box-reset-default;
                     //border: $gb-col_2-dsh-cyn;
+                    margin-bottom: 10px;
                     a {
                         text-decoration: none;
                         color: inherit; 
                     }
-                    h2 {
+                    h3 {
                         @include box-reset-default;
+                        //border: $gb-col_2-dsh-cyn;
                         text-overflow: ellipsis;
                         overflow: hidden;
+                        margin-bottom: 7px;
                         a {
                             text-decoration: none;
                             color: inherit; 
                             -webkit-text-stroke: 0px white;
                         }
                     }
-                    #projLi {
+                    h4 {
                         @include box-reset-default;
+                        //border: $gb-col_2-dsh-blu;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                         padding-left: 25px;
+                        margin-bottom: 7px;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                            -webkit-text-stroke: 0px white;
+                        }
                     }
                 }
             }

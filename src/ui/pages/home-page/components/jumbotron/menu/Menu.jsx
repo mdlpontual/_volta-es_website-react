@@ -29,17 +29,25 @@ function Menu({ setIsMenuOpen }) {
               <nav id="menuNav" className="row">
                     <ul id="menuList" className="col">
                         <li>
-                            <h2><a href="#aboutTextRow">SOBRE A VOLTA</a></h2>
+                            <h3><a href="#aboutCon">SOBRE A VOLTA</a></h3>
                         </li>
                         <li>
-                            <h2><a href="#projectsCon">PROJETOS</a></h2>
-                            <Link to={'/casaPaiva'}><h2 id="projLi">CASA PAIVA</h2></Link>
-                            <Link to={'/seerrambiFlats'}><h2 id="projLi">SERRAMBI FLATS</h2></Link>
-                            <Link to={'/apto404'}><h2 id="projLi">APARTAMENTO 404</h2></Link>
-                            <Link to={'/aurora1602'}><h2 id="projLi">AURORA 1602</h2></Link>
+                            <h3><a href="#infoNavMenuCon">SOBRE ENERGIA SOLAR</a></h3>
+                            <h4 id="projLi"><a href="#prjPhasesRow">ETAPAS DO PROJETO</a></h4>
+                            <h4 id="projLi"><a href="#howItWorksRow">COMO FUNCIONA?</a></h4>
                         </li>
                         <li>
-                            <h2><a href="#contactsRow">CONTATO</a></h2>
+                            <h3><a href="#projectNavMenuCon">PROJETOS</a></h3>
+                            <Link to={'/'}><h4 id="projLi">FAZENDA DE CAMARÕES</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">INDUSTRIA EM CAMARAGIBE</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">CONDOMÍNIO EM MARIA FARINHA</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">PROJETOS EM ALDEIA</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">PROJETOS EM GRAVATÁ</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">SÍTIO TANQUE</h4></Link>
+                            <Link to={'/'}><h4 id="projLi">OUTROS PROJETOS</h4></Link>
+                        </li>
+                        <li>
+                            <h3><a href="#hpFooterCon">CONTATO</a></h3>
                         </li>
                     </ul>
                 </nav>
