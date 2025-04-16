@@ -36,6 +36,7 @@ const IMG = {
     projectPhasesDiagram: new URL('./images/infos/diagrama_Etapas-do-Projeto.png', import.meta.url).href,
     jumbotronBackground: new URL('./images/backgrounds/JUMBO-background.JPG', import.meta.url).href,
     aboutBackground: new URL('./images/backgrounds/ABOUT-background.JPG', import.meta.url).href,
+    aboutBox: new URL('./images/backgrounds/ABOUT-box.JPG', import.meta.url).href,
     infosBackground: new URL('./images/backgrounds/INFO-background.JPG', import.meta.url).href,
     cartoonFullBackground: new URL('./images/backgrounds/cartoon/CARDS-background-full.jpeg', import.meta.url).href,
     cartoonLeftBackground: new URL('./images/backgrounds/cartoon/CARDS-background-house.jpeg', import.meta.url).href,

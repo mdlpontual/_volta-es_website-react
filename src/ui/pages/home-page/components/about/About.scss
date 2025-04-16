@@ -16,7 +16,7 @@
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 200px;
+                height: 150px;
             }
         }
     }
@@ -35,33 +35,63 @@
         #aboutCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
-            height: 100%;
-            align-content: center;
-            #aboutVoltaRow {
+            padding: 50px 50px 150px 50px;
+            #voltaText {
                 @include box-reset-default;
-                border: $gb-row_5-sol-org;
-                height: 50%;
-                #aboutVolta {
+                //border: $gb-row_2-sol-ylw;
+                height: 30%;
+                padding-bottom: 10px;
+                gap: 20px;
+                #voltaTextBox {
                     @include box-reset-default;
                     //border: $gb-col_2-sol-cyn;
+                    background-color: $transGrey;
+                    align-content: center;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
+                #voltaImgBox {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position-y: 70%;
                 }
             }
-            #aboutSustRow {
+            #voltaVideo {
                 @include box-reset-default;
-                border: $gb-row_5-sol-org;
-                height: 50%;
-                #aboutSust {
+                //border: $gb-row_2-sol-ylw;
+                height: 70%;
+                padding-top: 10px;
+                gap: 20px;
+                #voltaLogoBox {
                     @include box-reset-default;
                     //border: $gb-col_2-sol-cyn;
+                    background-color: $voltaBlue;
+                    justify-items: center;
+                    align-content: center;
+                    padding: 10px;
+                    img {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        min-width: 30%;
+                        max-width: 50%;
+                    }
+                }
+                #voltaVideoBox {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    iframe {
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
     }
-    #videoRow {
+    #sustRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 50%;
-        align-items: center;
-        text-align: center;
     }
 }
