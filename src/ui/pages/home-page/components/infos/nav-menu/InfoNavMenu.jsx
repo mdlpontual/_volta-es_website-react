@@ -2,8 +2,18 @@ import React from "react";
 
 function InfoNavMenu() {
   return (
-    <>        
-        <h1>navmenu</h1>
+    <>
+      <div id="navButtonsRow" className="row">
+        <div id="etapasCol" className="col">
+
+        </div>
+        <div id="comoFuncionaCol" className="col">
+
+        </div>
+        <div id="nossosProjetosCol" className="col">
+
+        </div>
+      </div>  
     </>
   );
 };

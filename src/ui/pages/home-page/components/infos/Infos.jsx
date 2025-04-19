@@ -7,7 +7,9 @@ function Infos() {
     <>
       <section id="infoNavMenuCon" className="container-fluid">
         <div id="infoNavMenuRow" className="row">
-          <InfoNavMenu />
+          <div id="infoNavMenuCol" className="col-auto">
+            <InfoNavMenu />
+          </div>
         </div>
         <div id="backgroundRow" className="row d-flex">
           <img id="houseCartoon" className="col-5" 
