@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IMG from "../../../../../../assets/imagesHub";
 
 function InfoNavMenu() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const [symbolSrc, setSymbolSrc] = useState(IMG.menuIconWhite);
+
+  const handleMouseEnter = () => {
+      setIsHovered(true);
+      setTimeout(() => {
+          setSymbolSrc(IMG.menuIconOrange);
+      }, 100); // Slight delay for smooth transition
+  };
+
+  const handleMouseLeave = () => {
+      setIsHovered(false);
+      setTimeout(() => {
+          setSymbolSrc(IMG.menuIconWhite);
+      }, 100); // Slight delay for smooth transition
+  };
+
   return (
     <>
       <div id="navButtonsRow" className="row">
