@@ -117,6 +117,11 @@
                         p {
                             @include box-reset-default;
                             //border: $gb-col_2-dsh-blu;
+                            #tallCase {
+                                @include box-reset-default;
+                                //border: $gb-col_2-dsh-cyn;
+                                font-size: 2rem;
+                            }
                         }
                     }
                     #bulletPointsRow {
@@ -128,6 +133,11 @@
                         #bulletPointsCol {
                             @include box-reset-default;
                             //border: $gb-col_2-dsh-blu;
+                            height: fit-content;
+                            p {
+                                @include box-reset-default;
+                                //border: $gb-col_2-dsh-blu;
+                            }
                         }
                     }
                 }

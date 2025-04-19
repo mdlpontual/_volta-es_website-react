@@ -46,7 +46,7 @@ function About() {
               <div id="sustTextCol" className="col">
                 <div id="topTextRow" className="row">
                   <p>
-                    <strong>SUSTENTABILIDADE</strong> é a qualidade de um sistema cujo uso dos recursos no presente não pode comprometer a disponibilidade dos mesmos para as gerações futuras.
+                    <strong id="tallCase">SUSTENTABILIDADE</strong> é a qualidade de um sistema cujo uso dos recursos no presente não pode comprometer a disponibilidade dos mesmos para as gerações futuras.
                     A sustentabilidade também pode ser definida como a capacidade do ser humano interagir com o mundo ao seu redor, 
                     preservando o meio ambiente para não comprometer os recursos naturais das gerações futuras. 
                     O conceito abrangente de sustentabilidade deve ter a capacidade de integrar as questões sociais, materiais, energéticas, 
