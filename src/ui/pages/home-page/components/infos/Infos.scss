@@ -25,15 +25,56 @@
                 height: 100%;
                 width: 100%;
                 padding: 50px;
-                gap: 50px;
+                gap: 30px;
                 align-content: center;
                 align-items: center;
-                #etapasCol {
+                #etapasCol,
+                #comoFuncionaCol,
+                #nossosProjetosCol {
                     @include box-reset-default;
                     //border: $gb-col_5-sol-blu;
                     height: 600px;
                     border-radius: 50px;
                     background-color: $transGrey;
+                    text-align: center;
+                    align-content: center;
+                    #buttonTextRow {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        height: 45%;
+                        padding: 150px 15px 30px 15px;
+                        align-content: center;
+                        h2 {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: fit-content;
+                        }
+                    }
+                    #buttonIconRow {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        height: 55%;
+                        justify-content: center;
+                        padding: 40px;
+                        #etapasIcon {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 170px;
+                            width: 170px;
+                        }
+                        #comoFuncionaIcon {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 150px;
+                            width: 150px;
+                        }
+                        #nossosProjetosIcon {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 150px;
+                            width: 150px;
+                        }
+                    }
                 }
                 #comoFuncionaCol {
                     @include box-reset-default;
