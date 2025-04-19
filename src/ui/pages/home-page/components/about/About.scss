@@ -93,5 +93,45 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 50%;
+        #sustCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            align-content: center;
+            #sustTextRow {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                height: fit-content;
+                justify-content: center;
+                background-color: $transGrey;
+                #sustTextCol {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    max-width: 1280px;
+                    padding: 50px 40px 50px 40px;
+                    text-align: justify;
+                    font-size: 1.2rem;
+                    #topTextRow {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        margin-bottom: 30px;
+                        p {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-blu;
+                        }
+                    }
+                    #bulletPointsRow {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        gap: 30px;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        #bulletPointsCol {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-blu;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
