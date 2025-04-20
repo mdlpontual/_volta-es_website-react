@@ -1,126 +1,30 @@
 @use "../../../../../style" as *;
 
-#infoNavMenuCon {
-    @include box-reset-default;
-    //border: $gb-con_5-sol-red;
-    height: 110vh;
-    position: relative;
-    justify-items: center;
-    #infoNavMenuRow {
-        @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 2;
-        justify-content: center;
-        #infoNavMenuCol {
-            @include box-reset-default;
-            //border: $gb-col_5-sol-blu;
-            height: 100%;
-            width: 1380px;
-            #navButtonsRow {
-                @include box-reset-default;
-                //border: $gb-row_2-dsh-org;
-                height: 100%;
-                width: 100%;
-                padding: 50px;
-                gap: 30px;
-                align-content: center;
-                align-items: center;
-                #etapasCol,
-                #comoFuncionaCol,
-                #nossosProjetosCol {
-                    @include box-reset-default;
-                    //border: $gb-col_5-sol-blu;
-                    height: 600px;
-                    border-radius: 50px;
-                    background-color: $transGrey;
-                    text-align: center;
-                    align-content: center;
-                    a {
-                        text-decoration: none;
-                        //color: inherit; 
-                    }
-                    #buttonTextRow {
-                        @include box-reset-default;
-                        //border: $gb-row_2-dsh-ylw;
-                        height: 45%;
-                        padding: 150px 15px 30px 15px;
-                        align-content: center;
-                        h2 {
-                            @include box-reset-default;
-                            //border: $gb-elm_2-dsh-lgr;
-                            height: fit-content;
-                        }
-                    }
-                    #buttonIconRow {
-                        @include box-reset-default;
-                        //border: $gb-row_2-dsh-ylw;
-                        height: 55%;
-                        justify-content: center;
-                        padding: 40px;
-                        #etapasIcon {
-                            @include box-reset-default;
-                            //border: $gb-elm_2-dsh-lgr;
-                            height: 170px;
-                            width: 170px;
-                        }
-                        #comoFuncionaIcon {
-                            @include box-reset-default;
-                            //border: $gb-elm_2-dsh-lgr;
-                            height: 150px;
-                            width: 150px;
-                        }
-                        #nossosProjetosIcon {
-                            @include box-reset-default;
-                            //border: $gb-elm_2-dsh-lgr;
-                            height: 150px;
-                            width: 150px;
-                        }
-                    }
-                }
-                #etapasCol:hover,
-                #comoFuncionaCol:hover,
-                #nossosProjetosCol:hover {
-                    @include box-reset-default;
-                    //border: $gb-col_5-sol-blu;
-                    background-color: $voltaBlue;
-                    transition: background-color 0.1s ease-in;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-    #backgroundRow {
-        @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-        align-content: end;
-        justify-content: space-between;
-        #houseCartoon {
-            @include box-reset-default;
-            //border: $gb-col_2-dsh-blu;
-        }
-        #panelsCartoon {
-            @include box-reset-default;
-            //border: $gb-col_2-dsh-blu;
-        }
-    }
-}
 #infosCon {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
-    height: 300vh;
+    //border: $gb-con_5-sol-red;
+    height: 330vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    position: relative;
     #prjPhasesRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
+        //border: $gb-row_5-sol-ylw;
         height: calc(100% / 3);
         align-items: center;
         text-align: center;
+        #prjPhasesCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            align-content: center;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_5-sol-lgr;
+                height: 90%;
+            }
+        }
     }
     #howItWorksRow {
         @include box-reset-default;

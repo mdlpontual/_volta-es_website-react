@@ -9,6 +9,176 @@ main {
     @include box-reset-default;
     //border: $gb-con_5-dsh-mag;
     height: fit-content;
+    #infoNavMenuCon {
+        @include box-reset-default;
+        //border: $gb-con_5-sol-red;
+        height: 110vh;
+        position: relative;
+        justify-items: center;
+        #infoNavMenuRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+            justify-content: center;
+            #infoNavMenuCol {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                height: 100%;
+                width: 1380px;
+                #navButtonsRow {
+                    @include box-reset-default;
+                    //border: $gb-row_2-dsh-org;
+                    height: 100%;
+                    width: 100%;
+                    padding: 50px;
+                    gap: 30px;
+                    align-content: center;
+                    align-items: center;
+                    #etapasCol,
+                    #comoFuncionaCol,
+                    #nossosProjetosCol {
+                        @include box-reset-default;
+                        //border: $gb-col_5-sol-blu;
+                        height: 600px;
+                        border-radius: 50px;
+                        background-color: $transGrey;
+                        text-align: center;
+                        align-content: center;
+                        a {
+                            text-decoration: none;
+                            //color: inherit; 
+                        }
+                        #buttonTextRow {
+                            @include box-reset-default;
+                            //border: $gb-row_2-dsh-ylw;
+                            height: 45%;
+                            padding: 150px 15px 30px 15px;
+                            align-content: center;
+                            h2 {
+                                @include box-reset-default;
+                                //border: $gb-elm_2-dsh-lgr;
+                                height: fit-content;
+                            }
+                        }
+                        #buttonIconRow {
+                            @include box-reset-default;
+                            //border: $gb-row_2-dsh-ylw;
+                            height: 55%;
+                            justify-content: center;
+                            padding: 40px;
+                            #etapasIcon {
+                                @include box-reset-default;
+                                //border: $gb-elm_2-dsh-lgr;
+                                height: 170px;
+                                width: 170px;
+                            }
+                            #comoFuncionaIcon {
+                                @include box-reset-default;
+                                //border: $gb-elm_2-dsh-lgr;
+                                height: 150px;
+                                width: 150px;
+                            }
+                            #nossosProjetosIcon {
+                                @include box-reset-default;
+                                //border: $gb-elm_2-dsh-lgr;
+                                height: 150px;
+                                width: 150px;
+                            }
+                        }
+                    }
+                    #etapasCol:hover,
+                    #comoFuncionaCol:hover,
+                    #nossosProjetosCol:hover {
+                        @include box-reset-default;
+                        //border: $gb-col_5-sol-blu;
+                        background-color: $voltaBlue;
+                        transition: background-color 0.1s ease-in;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        #backgroundRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            align-content: end;
+            justify-content: space-between;
+            #houseCartoon {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-blu;
+            }
+            #panelsCartoon {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-blu;
+            }
+        }
+    }
+    #navbarRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 75px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: $voltaBlue;
+        padding: 0px 75px 0px 75px;
+        #navbarLogoCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            align-content: center;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                height: 75%;
+            }
+        }
+        #navbarNavCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            align-content: center;
+            height: 100%;
+            margin-left: 50px;
+            #navCon {
+                @include box-reset-default;
+                //border: $gb-con_2-dsh-mag;
+                height: 100%;
+                align-content: center;
+                #navRow {
+                    @include box-reset-default;
+                    //border: $gb-row_2-dsh-org;
+                    height: fit-content;
+                    width: 100%;
+                    align-content: center;
+                    justify-content: space-between;
+                    #navLi {
+                        @include box-reset-default;
+                        //border: $gb-col_2-dsh-cyn;
+                        height: fit-content;
+                        list-style: none;
+                        align-content: center;
+                        justify-items: center;
+                        font-size: 1.5rem;
+                        a {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            text-decoration: none;
+                            color: inherit;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 footer {
     @include box-reset-default;
