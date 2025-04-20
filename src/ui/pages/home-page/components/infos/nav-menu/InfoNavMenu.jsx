@@ -1,53 +1,68 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import IMG from "../../../../../../assets/imagesHub";
 
 function InfoNavMenu() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-  const [symbolSrc, setSymbolSrc] = useState(IMG.menuIconWhite);
+  const [iconSrc, setIconSrc] = useState({
+    phases: IMG.phasesIcon_White,
+    panel: IMG.panelIcon_White,
+    projects: IMG.projectsIcon_White,
+  });
 
-  const handleMouseEnter = () => {
-      setIsHovered(true);
-      setTimeout(() => {
-          setSymbolSrc(IMG.menuIconOrange);
-      }, 100); // Slight delay for smooth transition
+  const handleMouseEnter = (key, colorIcon) => {
+    setTimeout(() => {
+      setIconSrc(prev => ({ ...prev, [key]: colorIcon }));
+    }, 10);
   };
 
-  const handleMouseLeave = () => {
-      setIsHovered(false);
-      setTimeout(() => {
-          setSymbolSrc(IMG.menuIconWhite);
-      }, 100); // Slight delay for smooth transition
+  const handleMouseLeave = (key, whiteIcon) => {
+    setTimeout(() => {
+      setIconSrc(prev => ({ ...prev, [key]: whiteIcon }));
+    }, 10);
   };
 
   return (
     <>
       <div id="navButtonsRow" className="row">
-        <div id="etapasCol" className="col">
+        <div id="etapasCol" className="col btn" 
+            onMouseEnter={() => handleMouseEnter("phases", IMG.phasesIcon_Color)}
+            onMouseLeave={() => handleMouseLeave("phases", IMG.phasesIcon_White)}>
           <div id="buttonTextRow" className="row">
             <h3><strong>ETAPAS <br /> DO PROJETO</strong></h3>
           </div>
           <div id="buttonIconRow" className="row">
-            <img src={IMG.phasesIcon_White} id="etapasIcon" alt="icone das etapas do projeto" />
+            <img id="etapasIcon"
+                 className="col-auto"
+                 src={iconSrc.phases}
+                 alt="icone das etapas do projeto" />
           </div>
         </div>
-        <div id="comoFuncionaCol" className="col">
+        <div id="comoFuncionaCol" className="col btn" 
+            onMouseEnter={() => handleMouseEnter("panel", IMG.panelIcon_Color)}
+            onMouseLeave={() => handleMouseLeave("panel", IMG.panelIcon_White)}>
           <div id="buttonTextRow" className="row">
             <h3><strong>COMO FUNCIONA <br /> UM GERADOR FOTOVOLTAICO?</strong></h3>
           </div>
           <div id="buttonIconRow" className="row">
-            <img src={IMG.panelIcon_White} id="comoFuncionaIcon" alt="icone das etapas do projeto" />
+            <img id="comoFuncionaIcon"
+                 className="col-auto"
+                 src={iconSrc.panel}
+                 alt="icone das etapas do projeto" />
           </div>
         </div>
-        <div id="nossosProjetosCol" className="col">
+        <div id="nossosProjetosCol" className="col btn" 
+            onMouseEnter={() => handleMouseEnter("projects", IMG.projectsIcon_Color)}
+            onMouseLeave={() => handleMouseLeave("projects", IMG.projectsIcon_White)}>
           <div id="buttonTextRow" className="row">
-              <h3><strong>NOSSOS PROJETOS <br /> EXECUTADOS</strong></h3>
-            </div>
-            <div id="buttonIconRow" className="row">
-              <img src={IMG.projectsIcon_White} id="nossosProjetosIcon" alt="icone das etapas do projeto" />
-            </div>
+            <h3><strong>NOSSOS PROJETOS <br /> EXECUTADOS</strong></h3>
+          </div>
+          <div id="buttonIconRow" className="row">
+            <img id="nossosProjetosIcon"
+                 className="col-auto"
+                 src={iconSrc.projects}
+                 alt="icone das etapas do projeto" />
+          </div>
         </div>
-      </div>  
+      </div>
     </>
   );
 };

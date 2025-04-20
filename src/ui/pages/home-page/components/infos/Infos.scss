@@ -76,19 +76,13 @@
                         }
                     }
                 }
-                #comoFuncionaCol {
+                #etapasCol:hover,
+                #comoFuncionaCol:hover,
+                #nossosProjetosCol:hover {
                     @include box-reset-default;
                     //border: $gb-col_5-sol-blu;
-                    height: 600px;
-                    border-radius: 50px;
-                    background-color: $transGrey;
-                }
-                #nossosProjetosCol {
-                    @include box-reset-default;
-                    //border: $gb-col_5-sol-blu;
-                    height: 600px;
-                    border-radius: 50px;
-                    background-color: $transGrey;
+                    background-color: $voltaBlue;
+                    transition: color 0.2s ease-in 0.1s;
                 }
             }
         }
