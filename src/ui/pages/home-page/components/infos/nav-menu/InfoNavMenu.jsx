@@ -23,44 +23,50 @@ function InfoNavMenu() {
   return (
     <>
       <div id="navButtonsRow" className="row">
-        <div id="etapasCol" className="col btn" 
+        <div id="etapasCol" className="col" 
             onMouseEnter={() => handleMouseEnter("phases", IMG.phasesIcon_Color)}
             onMouseLeave={() => handleMouseLeave("phases", IMG.phasesIcon_White)}>
-          <div id="buttonTextRow" className="row">
-            <h3><strong>ETAPAS <br /> DO PROJETO</strong></h3>
-          </div>
-          <div id="buttonIconRow" className="row">
-            <img id="etapasIcon"
-                 className="col-auto"
-                 src={iconSrc.phases}
-                 alt="icone das etapas do projeto" />
-          </div>
+          <a href="#prjPhasesRow">
+            <div id="buttonTextRow" className="row">
+              <h3><strong>ETAPAS <br /> DO PROJETO</strong></h3>
+            </div>
+            <div id="buttonIconRow" className="row">
+              <img id="etapasIcon"
+                  className="col-auto"
+                  src={iconSrc.phases}
+                  alt="icone das etapas do projeto" />
+            </div>
+          </a>
         </div>
-        <div id="comoFuncionaCol" className="col btn" 
+        <div id="comoFuncionaCol" className="col" 
             onMouseEnter={() => handleMouseEnter("panel", IMG.panelIcon_Color)}
             onMouseLeave={() => handleMouseLeave("panel", IMG.panelIcon_White)}>
-          <div id="buttonTextRow" className="row">
-            <h3><strong>COMO FUNCIONA <br /> UM GERADOR FOTOVOLTAICO?</strong></h3>
-          </div>
-          <div id="buttonIconRow" className="row">
-            <img id="comoFuncionaIcon"
-                 className="col-auto"
-                 src={iconSrc.panel}
-                 alt="icone das etapas do projeto" />
-          </div>
+          <a href="#howItWorksRow">
+            <div id="buttonTextRow" className="row">
+              <h3><strong>COMO FUNCIONA <br /> UM GERADOR FOTOVOLTAICO?</strong></h3>
+            </div>
+            <div id="buttonIconRow" className="row">
+              <img id="comoFuncionaIcon"
+                    className="col-auto"
+                    src={iconSrc.panel}
+                    alt="icone das etapas do projeto" />
+            </div>
+          </a>
         </div>
-        <div id="nossosProjetosCol" className="col btn" 
+        <div id="nossosProjetosCol" className="col" 
             onMouseEnter={() => handleMouseEnter("projects", IMG.projectsIcon_Color)}
             onMouseLeave={() => handleMouseLeave("projects", IMG.projectsIcon_White)}>
-          <div id="buttonTextRow" className="row">
-            <h3><strong>NOSSOS PROJETOS <br /> EXECUTADOS</strong></h3>
-          </div>
-          <div id="buttonIconRow" className="row">
-            <img id="nossosProjetosIcon"
-                 className="col-auto"
-                 src={iconSrc.projects}
-                 alt="icone das etapas do projeto" />
-          </div>
+          <a href="#projectNavMenuCon">
+            <div id="buttonTextRow" className="row">
+              <h3><strong>NOSSOS PROJETOS <br /> EXECUTADOS</strong></h3>
+            </div>
+            <div id="buttonIconRow" className="row">
+              <img id="nossosProjetosIcon"
+                  className="col-auto"
+                  src={iconSrc.projects}
+                  alt="icone das etapas do projeto" />
+            </div>
+          </a>
         </div>
       </div>
     </>
