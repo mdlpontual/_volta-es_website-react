@@ -38,12 +38,12 @@ function Menu({ setIsMenuOpen }) {
                         </li>
                         <li>
                             <h2 id="navLi"><a href="#projectNavMenuCon">PROJETOS</a></h2>
-                            <Link to={'/'}><h2 id="projLi">- FAZENDA DE CAMARÕES</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- INDUSTRIA EM CAMARAGIBE</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- CONDOMÍNIO EM MARIA FARINHA</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- PROJETO ACENDE</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- RESIDÊNCIAL EM MARIA FARINHA</h2></Link>
+                            <Link to={'/'}><h2 id="projLi">- PROJETO MOJEIRO</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- PROJETOS EM ALDEIA</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- PROJETOS EM GRAVATÁ</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- SÍTIO TANQUE</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- OUTROS PROJETOS</h2></Link>
                         </li>
                         <li>
