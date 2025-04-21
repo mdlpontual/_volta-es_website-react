@@ -38,25 +38,53 @@
                 overflow: hidden;
                 align-content: center;
                 box-sizing: border-box;
+                position: relative;
                 img {
                     @include box-reset-default;
-                    //border: $gb-row_2-dsh-ylw;
+                    //border: $gb-elm_2-dsh-lgr;
                     filter: grayscale(100%);
+                }
+                #titleBox {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    position: absolute;
+                    z-index: 1;
+                    height: 0;
+                    align-content: center;
+                    background-color: $filterLayer;
+                    visibility: hidden;
+                    h3 {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        padding-left: 50px;
+                    }
                 }
             }
             #gapRow {
                 @include box-reset-default;
                 //border: $gb-row_2-dsh-ylw;
-                height: 25px;
+                height: 15px;
             }
             #hoverBox:hover {
                 #projectCardRow {
-                    height: 170px;
-                    transition: height 0.2s linear;
+                    height: 160px;
+                    transition: height 0.35s linear;
                     cursor: pointer;
                     img {
                         filter: grayscale(0%);
-                        transition: filter 0.15s ease-in;
+                        transition: filter 0s linear 0.35s;
+                    }
+                    #titleBox {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        position: absolute;
+                        z-index: 1;
+                        height: 100%;
+                        align-self: center;
+                        align-content: center;
+                        background-color: $filterLayer;
+                        visibility: visible;
+                        transition: height 0.35s linear;
                     }
                 }
                 #gapRow {
@@ -64,8 +92,8 @@
                     //border: $gb-row_2-dsh-ylw;
                     height: 5px;
                     background-color: $sunOrange;
-                    transition: height 0.2s linear,
-                                background-color 0s linear 0.2s ;
+                    transition: height 0.35s linear,
+                                background-color 0s linear 0.35s ;
                 }
             }
         }
