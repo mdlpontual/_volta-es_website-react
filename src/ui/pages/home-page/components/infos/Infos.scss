@@ -80,10 +80,67 @@
     }
     #letsTalkRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
+        //border: $gb-row_5-sol-ylw;
         height: calc(100% / 3);
+        padding: 20px;
         align-items: center;
+        justify-content: center;
         text-align: center;
+        #letsTalkCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            max-width: 1380px;
+            align-content: center;
+            position: relative;
+            #letsTalkTextRow {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                height: fit-content;
+                width: 100%;
+                border-radius: 50px;
+                padding: 50px;
+                background-color: $transGrey;
+                #letsTalkTextCol {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    .row {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        justify-content: center;
+                        #zap {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-cyn;
+                            padding: 0 15px;
+                            font-weight: 100;
+                            font-size: 1.2rem;
+                        }
+                        #mail {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-cyn;
+                            padding: 0 15px;
+                            font-weight: 100;
+                        }
+                    }
+                }
+            }
+            #checkOurProjectsRow {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                width: 100%;
+                position:absolute;
+                bottom: 0;
+                #arrowDownCol {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    height: 75px;
+                    padding: 10px;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 

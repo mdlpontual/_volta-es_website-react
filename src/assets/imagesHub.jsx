@@ -30,7 +30,7 @@ const IMG = {
     projectsIcon_Color: new URL('./images/icons/info-cards/house-color.png', import.meta.url).href,
     arrowLeftIcon: new URL('./images/icons/arrows/option-01_left.png', import.meta.url).href,
     arrowRightIcon: new URL('./images/icons/arrows/option-01_right.png', import.meta.url).href,
-    arrowDownIcon: new URL('./images/icons/arrows/option-01_down.png', import.meta.url).href,
+    arrowDownIcon: new URL('./images/icons/arrows/option-03_down.png', import.meta.url).href,
 
     //backgrounds and info images
     projectPhasesDiagram: new URL('./images/infos/diagrama_Etapas-do-Projeto.png', import.meta.url).href,

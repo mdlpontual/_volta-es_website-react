@@ -41,7 +41,31 @@ function Infos() {
           </div>
         </div>
         <div id="letsTalkRow" className="row">
-          <h1>Vamos Conversar</h1>
+          <div id="letsTalkCol" className="col">
+            <div id="letsTalkTextRow" className="row">
+              <div id="letsTalkTextCol" className="col">
+                <h1>Precisa de Ajuda?</h1>
+                <br />
+                <br />
+                <h4 className="row">Agora que você conheceu um pouco da Volta 
+                                    - nossa missão, profissionalismo e a qualidade de nossos serviços 
+                                    - que tal esclarecer suas dúvidas?</h4>
+                <br />
+                <br />
+                <h4>Vamos Conversar!</h4>
+                <div className="row">
+                  <h5 id="zap" className="col-auto"><img src={IMG.zapIcon} alt="" height={30}/> (81) 9.8290.9626</h5>
+                  <h5 id="mail" className="col-auto"><img src={IMG.mailIcon} alt="" height={30}/> comercial@voltaes.com.br</h5>
+                </div>
+              </div>
+            </div>
+            <div id="checkOurProjectsRow" className="row">
+              <h5>Confira nossa galeria de projetos realizados!</h5>
+              <div id="arrowDownCol" className="col">
+                <img src={IMG.arrowDownIcon} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
