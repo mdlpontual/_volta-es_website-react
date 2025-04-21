@@ -1,9 +1,10 @@
 import React from "react";
 import ProjectCard from "./project-card/ProjectCard";
-
-cardsArr = [  ];
+import projectsData from "../../../projects/ProjectsDataHub";
 
 function ProjectsNavMenu() {
+  const projectsList = Object.values(projectsData);
+
   return (
     <>
       <section id="projectNavMenuCon" className="container-fluid">
@@ -16,10 +17,9 @@ function ProjectsNavMenu() {
         </div>
         <div id="projectNavMainRow" className="row">
           <div id="projectNavMainCol" className="col">
-            {cardsArr.map((card, i) => (
-                <ProjectCard />
-              )
-            )}
+            {projectsList.map((project, i) => (
+              <ProjectCard title={project.title} cover={project.images[0]} key={i}/>
+            ))}
           </div>
         </div>
         <div id="projectNavFooterRow" className="row"></div>

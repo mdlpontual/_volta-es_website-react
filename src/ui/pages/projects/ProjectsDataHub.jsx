@@ -18,7 +18,7 @@ const projectsData = {
         year: "2022",
         modules: "86 módulos",
         powerOutput: "44,3 kWp",
-        images: [IMG.GVT_00, IMG.GVT_01, IMG.GVT_02, IMG.GVT_03, IMG.GVT_04, IMG.GVT_05, IMG.GVT_06, IMG.GVT_07, IMG.GVT_08, IMG.GVT_09, IMG.GVT_10],
+        images: [IMG.STO_00, IMG.STO_01, IMG.STO_02, IMG.STO_03, IMG.STO_04, IMG.STO_05],
         menuPage: "prjGvt",
         description: "Esta usina foi implantada para atender uma associação de consumidores de energia solar, localizada na área rural de Gravatá. Ela compartilha toda a energia solar gerada com os seus associados, que se situam espalhados por toda região metropolitana, zona da mata e agreste de Pernambuco. Com 204 módulos fotovoltaicos e 108,1 kWp de potência, espalha energia renovável por todo o estado!"
     },
@@ -48,7 +48,7 @@ const projectsData = {
         year: "2017-2025",
         modules: "203 módulos",
         powerOutput: "89,6 kWp",
-        images: [IMG.GVT_00, IMG.ALD_01, IMG.ALD_02, IMG.ALD_03, IMG.ALD_04, IMG.ALD_05, IMG.ALD_06, IMG.ALD_07, IMG.ALD_08, IMG.ALD_09, IMG.ALD_10, IMG.ALD_11, IMG.ALD_12, IMG.ALD_13, IMG.ALD_14, IMG.ALD_15, IMG.ALD_16, IMG.ALD_17, IMG.ALD_18, IMG.ALD_19, IMG.ALD_20, IMG.ALD_21, IMG.ALD_22],
+        images: [IMG.ALD_00, IMG.ALD_01, IMG.ALD_02, IMG.ALD_03, IMG.ALD_04, IMG.ALD_05, IMG.ALD_06, IMG.ALD_07, IMG.ALD_08, IMG.ALD_09, IMG.ALD_10, IMG.ALD_11, IMG.ALD_12, IMG.ALD_13, IMG.ALD_14, IMG.ALD_15, IMG.ALD_16, IMG.ALD_17, IMG.ALD_18, IMG.ALD_19, IMG.ALD_20, IMG.ALD_21, IMG.ALD_22],
         menuPage: "prjAld",
         description: "Instalamos diversos sistemas de geração fotovoltaica na região de Aldeia, desde a primeira obra meados de 2017 até o presente. Diversas famílias são beneficiadas pela energia renovável do sol. São 203 módulos com 89,6 kWp de potência acumulados entre diferentes projetos."
     },
