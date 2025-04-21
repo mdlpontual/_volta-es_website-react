@@ -2,13 +2,45 @@
 
 #projectNavMenuCon {
     @include box-reset-default;
-    border: $gb-con_5-sol-red;
-    height: 200vh;
-    #projectNavMenuRow {
+    //border: $gb-con_5-sol-red;
+    height: fit-content;
+    #projectNavHeadRow {
         @include box-reset-default;
-        border: $gb-row_5-sol-ylw;
-        height: 100%;
-        align-items: center;
-        text-align: center;
+        //border: $gb-row_5-sol-ylw;
+        height: 50vh;
+        background-color: $voltaBlue;
+        #projectNavHeadCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-cyn;
+            align-content: end;
+            #titleRow {
+                @include box-reset-default;
+                //border: $gb-row_2-dsh-org;
+                text-align: center;
+                width: 100%;
+                h1 {
+                    font-size: clamp(3rem, 8vw, 10rem);
+                  }
+            }
+        }
+    }
+    #projectNavMainRow {
+        @include box-reset-default;
+        border: $gb-row_5-sol-org;
+        height: fit-content;
+        #projectNavMainCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-cyn;
+            #projectCardRow {
+                @include box-reset-default;
+                border: $gb-row_2-dsh-ylw;
+                height: 100px;
+            }
+        }
+    }
+    #projectNavFooterRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50vh;
     }
 }

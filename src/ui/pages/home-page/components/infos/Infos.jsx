@@ -6,7 +6,21 @@ import InfoNavBar from "./navbar/InfoNavbar";
 function Infos() {
   return (
     <>
+      <section id="infoNavMenuCon" className="container-fluid">
+        <div id="infoNavMenuRow" className="row">
+          <div id="infoNavMenuCol" className="col-auto">
+            <InfoNavMenu />
+          </div>
+        </div>
+        <div id="backgroundRow" className="row d-flex">
+          <img id="houseCartoon" className="col-5" 
+              src={IMG.cartoonLeftBackground} alt="ilustração de casa com painel solar" />
+          <img id="panelsCartoon" className="col-5" 
+              src={IMG.cartoonRightBackground} alt="ilustração de trabalhadores e infra-estrutura elétrica" />
+        </div>
+      </section>
       <section id="infosCon" className="container-fluid" style={{backgroundImage: `url(${IMG.infosBackground})`}}>
+        <div id="divider" className="row"></div>
         <div id="prjPhasesRow" className="row">
           <div id="prjPhasesCol" className="col">
             <img src={IMG.projectPhasesDiagram} alt="Diagrama exemplo das etapas de um projeto" />
