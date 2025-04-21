@@ -7,9 +7,9 @@ function Infos() {
   return (
     <>
       <section id="infosCon" className="container-fluid" style={{backgroundImage: `url(${IMG.infosBackground})`}}>
-        <div id="prjPhasesRow" className="row" style={{backgroundImage: `url(${IMG.infosBackground})`}}>
+        <div id="prjPhasesRow" className="row">
           <div id="prjPhasesCol" className="col">
-            <img src={IMG.projectPhasesDiagram} alt="" />
+            <img src={IMG.projectPhasesDiagram} alt="Diagrama exemplo das etapas de um projeto" />
           </div>
         </div>
         <div id="howItWorksRow" className="row">

@@ -39,27 +39,39 @@
             #howItWorksTextCon {
                 @include box-reset-default;
                 //border: $gb-con_2-sol-mag;
+                height: 100%;
                 justify-items: center;
                 background-color: $transGrey;
                 #howItWorksTextRow {
                     @include box-reset-default;
                     //border: $gb-row_2-sol-org;
-                    height: fit-content;
+                    height: 100%;
                     max-width: 1380px;
                     padding: 50px;
                     gap: 30px;
+                    flex-wrap: wrap;
+                    align-items: center;
                     #howItWorksTextCol {
                         @include box-reset-default;
                         //border: $gb-col_2-sol-blu;
-                        padding: 20px;
+                        height: 100%;
+                        min-width: 400px;
+                        //padding: 10px;
                         font-size: 1.25rem;
+                        text-align: justify;
+                        h4 {
+                            text-align: start !important;
+                        }
                     }
                     #howItWorksVideoCol {
                         @include box-reset-default;
                         //border: $gb-col_2-sol-blu;
+                        height: 100%;
+                        min-width: 400px;
+                        //padding: 10px;
                         iframe {
                             width: 100%;
-                            height: 100%;
+                            height: 400px;
                         }
                     }
                 }
