@@ -56,7 +56,7 @@ function InfoNavMenu() {
         <div id="nossosProjetosCol" className="col" 
             onMouseEnter={() => handleMouseEnter("projects", IMG.projectsIcon_Color)}
             onMouseLeave={() => handleMouseLeave("projects", IMG.projectsIcon_White)}>
-          <a href="#projectNavMenuCon">
+          <a href="#projectNavHeadRow">
             <div id="buttonTextRow" className="row">
               <h3><strong>NOSSOS PROJETOS <br /> EXECUTADOS</strong></h3>
             </div>
