@@ -15,7 +15,7 @@ function InfoNavbar() {
             <ul id="navRow" className="row d-flex">
               <li id="navLi" className="col-auto"><a href="#aboutCon">A VOLTA</a></li>
               <li id="navLi" className="col-auto"><a href="#infoNavMenuCon">INFORMATIVOS</a></li>
-              <li id="navLi" className="col-auto"><a href="#projectNavMenuCon">PROJETOS</a></li>
+              <li id="navLi" className="col-auto"><a href="#projectNavHeadRow">PROJETOS</a></li>
               <li id="navLi" className="col-auto"><a href="#hpFooterCon">CONTATO</a></li>
             </ul>
           </nav>

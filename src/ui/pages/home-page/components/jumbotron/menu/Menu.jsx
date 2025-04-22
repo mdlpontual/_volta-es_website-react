@@ -37,7 +37,7 @@ function Menu({ setIsMenuOpen }) {
                             <h2 id="projLi"><a href="#howItWorksRow">- COMO FUNCIONA?</a></h2>
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#projectNavMenuCon">PROJETOS</a></h2>
+                            <h2 id="navLi"><a href="#projectNavHeadRow">PROJETOS</a></h2>
                             <Link to={'/'}><h2 id="projLi">- INDUSTRIA EM CAMARAGIBE</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- PROJETO ACENDE</h2></Link>
                             <Link to={'/'}><h2 id="projLi">- RESIDÊNCIAL EM MARIA FARINHA</h2></Link>

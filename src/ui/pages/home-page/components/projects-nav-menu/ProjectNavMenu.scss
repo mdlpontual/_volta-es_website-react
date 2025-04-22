@@ -4,6 +4,12 @@
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
     height: fit-content;
+    #projectNavHBufferRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50vh;
+        background-color: $voltaBlue;
+    }
     #projectNavHeadRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
@@ -44,6 +50,16 @@
                     //border: $gb-elm_2-dsh-lgr;
                     filter: grayscale(100%);
                 }
+                h3 {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    padding-left: 50px;
+                    width: fit-content;
+                    position: absolute;
+                    z-index: 2;
+                    align-self: center;
+                    visibility: hidden;
+                }
                 #titleBox {
                     @include box-reset-default;
                     //border: $gb-elm_2-dsh-lgr;
@@ -53,11 +69,6 @@
                     align-content: center;
                     background-color: $filterLayer;
                     visibility: hidden;
-                    h3 {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        padding-left: 50px;
-                    }
                 }
             }
             #gapRow {
@@ -74,13 +85,26 @@
                         filter: grayscale(0%);
                         transition: filter 0s linear 0.35s;
                     }
+                    h3 {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        padding-left: 50px;
+                        width: fit-content;
+                        position: absolute;
+                        z-index: 2;
+                        align-self: center;
+                        visibility: visible;
+                    }
+                    h3:hover {
+                        color: $sunOrange;
+                    }
                     #titleBox {
                         @include box-reset-default;
                         //border: $gb-elm_2-dsh-lgr;
                         position: absolute;
                         z-index: 1;
                         height: 100%;
-                        align-self: center;
+                        //align-self: center;
                         align-content: center;
                         background-color: $filterLayer;
                         visibility: visible;
@@ -101,6 +125,6 @@
     #projectNavFooterRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50vh;
+        height: 75vh;
     }
 }

@@ -6,11 +6,10 @@ function ProjectCard({ title, cover }) {
       <div id="hoverBox">
         <div id="projectCardRow" className="row">
           <img src={cover} alt={`imagem de fundo do projeto ${title}`} />
-          <div id="titleBox"><h3>{title}</h3></div>
+          <h3>{title}</h3>
+          <div id="titleBox"></div>
         </div>
-        <div id="gapRow" className="row">
-          
-        </div>
+        <div id="gapRow" className="row"></div>
       </div>
     </>
   );

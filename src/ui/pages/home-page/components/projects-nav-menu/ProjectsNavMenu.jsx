@@ -8,6 +8,7 @@ function ProjectsNavMenu() {
   return (
     <>
       <section id="projectNavMenuCon" className="container-fluid">
+        <div id="projectNavHBufferRow" className="row"></div>
         <div id="projectNavHeadRow" className="row">
           <div id="projectNavHeadCol" className="col">
             <div id="titleRow" className="row">
