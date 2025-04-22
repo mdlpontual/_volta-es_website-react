@@ -14,8 +14,9 @@ const IMG = {
     jaSolarLogo: new URL('./images/logos/Parceiros/LOGO-JASolar.png', import.meta.url).href,
     jinkoLogo: new URL('./images/logos/Parceiros/LOGO-Jinko.png', import.meta.url).href,
     longiLogo: new URL('./images/logos/Parceiros/LOGO-longi.png', import.meta.url).href,
-    smaLogo: new URL('./images/logos/Parceiros/LOGO-sma.png', import.meta.url).href,
     trinaLogo: new URL('./images/logos/Parceiros/LOGO-trina.png', import.meta.url).href,
+    canSolarLogo: new URL('./images/logos/Parceiros/LOGO-CanSolar.png', import.meta.url).href,
+    enphaseLogo: new URL('./images/logos/Parceiros/LOGO-enphase.png', import.meta.url).href,
 
     //incons
     mailIcon: new URL('./images/icons/mail-white.png', import.meta.url).href,
