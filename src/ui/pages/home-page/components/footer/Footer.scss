@@ -18,13 +18,13 @@
             #partnersTitleRow {
                 @include box-reset-default;
                 //border: $gb-row_5-sol-org;
-
                 #partnersTitleCol {
                     @include box-reset-default;
                     //border: $gb-col_5-sol-cyn;
                     color: black;
                     align-content: end;
-                    h5 {
+                    padding: 10px;
+                    h4 {
                         @include box-reset-default;
                         //border: $gb-elm_5-dsh-grn;
                     }
@@ -85,59 +85,102 @@
     }
     #contactRow {
         @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
+        border: $gb-row_5-sol-ylw;
         height: 60vh;
-        align-items: center;
-        text-align: center;
         background-color: $voltaBlue;
+        justify-content: center;
+        #contactCol {
+            @include box-reset-default;
+            border: $gb-col_5-sol-blu;
+            justify-items: center;
+            max-width: 1380px;
+            padding: 25px 50px 50px 50px;
+            #footerLogoRow {
+                @include box-reset-default;
+                border: $gb-row_5-sol-org;
+                height: 20%;
+                width: 100%;
+                justify-content: center;
+                #footerLogoCol {
+                    @include box-reset-default;
+                    border: $gb-col_5-sol-cyn;
+                    height: 100%;
+                    padding: 10px;
+                    img {
+                        @include box-reset-default;
+                        border: $gb-elm_2-dsh-lgr;
+                        height: 100%;
+                    }
+                }
+            }
+            #contactsMainRow {
+                @include box-reset-default;
+                border: $gb-row_5-sol-org;
+                height: 60%;
+                width: 100%;
+                #adressCol {
+                    @include box-reset-default;
+                    border: $gb-col_5-sol-cyn;
+                }
+                #profileContactCol {
+                    @include box-reset-default;
+                    border: $gb-col_5-sol-cyn;
+                }
+            }
+            #signaturesRow {
+                @include box-reset-default;
+                border: $gb-row_5-sol-org;
+                height: 20%;
+                width: 100%;
+            }
+        }
     }
 }
 
-@media only screen and (max-width: 768px) {
-    
-#hpFooterCon {
-    #partnersRow {
-        #partnersCol {
-            #partnersLogosRow {
-                #partnersLogoCol {
-                    #logoFronius {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 100px;
-                    }
-                    #logoJaSolar {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 90px;
-                    }
-                    #logoJinko {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 90px;
-                    }
-                    #logoCanadianSolar {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 190px;
-                    }
-                    #logoLongi {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 90px;
-                    }
-                    #logoTrina {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 100px;
-                    }
-                    #logoEnphase {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        max-width: 150px;
+@media only screen and (max-width: 768px) { 
+    #hpFooterCon {
+        #partnersRow {
+            #partnersCol {
+                #partnersLogosRow {
+                    #partnersLogoCol {
+                        #logoFronius {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 100px;
+                        }
+                        #logoJaSolar {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 90px;
+                        }
+                        #logoJinko {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 90px;
+                        }
+                        #logoCanadianSolar {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 190px;
+                        }
+                        #logoLongi {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 90px;
+                        }
+                        #logoTrina {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 100px;
+                        }
+                        #logoEnphase {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            max-width: 150px;
+                        }
                     }
                 }
             }
         }
     }
-}
 }

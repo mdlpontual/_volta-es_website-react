@@ -9,7 +9,7 @@ function Footer() {
           <div id="partnersCol" className="col">
             <div id="partnersTitleRow" className="row">
               <div id="partnersTitleCol" className="col">
-                <h5>Parceiros:</h5>
+                <h4>Parceiros:</h4>
               </div>
             </div>
             <div id="partnersLogosRow" className="row">
@@ -51,9 +51,26 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div id="contactRow" className="row">
+        <address id="contactRow" className="row">
+          <div id="contactCol" className="col">
+            <div id="footerLogoRow" className="row">
+              <div id="footerLogoCol" className="col-auto">
+                <img  src={IMG.voltaEsLogo_White} alt="Volta Logo" />
+              </div>
+            </div>
+            <div id="contactsMainRow" className="row">
+              <div id="adressCol" className="col">
+              
+              </div>
+              <div id="profileContactCol" className="col">
+            
+              </div>
+            </div>
+            <div id="signaturesRow" className="row">
           
-        </div>
+            </div>
+          </div>
+        </address>
       </section>
     </>
   );
