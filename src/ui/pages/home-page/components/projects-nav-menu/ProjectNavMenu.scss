@@ -65,10 +65,11 @@
                     //border: $gb-elm_2-dsh-lgr;
                     position: absolute;
                     z-index: 1;
-                    height: 0;
+                    height: 100%;
                     align-content: center;
                     background-color: $filterLayer;
-                    visibility: hidden;
+                    //visibility: hidden;
+                    opacity: 0;
                 }
             }
             #gapRow {
@@ -104,11 +105,11 @@
                         position: absolute;
                         z-index: 1;
                         height: 100%;
-                        //align-self: center;
                         align-content: center;
                         background-color: $filterLayer;
-                        visibility: visible;
-                        transition: height 0.35s linear;
+                        //visibility: visible;
+                        opacity: 100%;
+                        transition: opacity 0.35s linear;
                     }
                 }
                 #gapRow {
