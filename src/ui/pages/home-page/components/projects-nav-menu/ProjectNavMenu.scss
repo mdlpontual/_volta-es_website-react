@@ -84,7 +84,7 @@
                     cursor: pointer;
                     img {
                         filter: grayscale(0%);
-                        transition: filter 0s linear 0.35s;
+                        transition: filter 0s linear 0.2s;
                     }
                     h3 {
                         @include box-reset-default;
@@ -109,7 +109,7 @@
                         background-color: $filterLayer;
                         //visibility: visible;
                         opacity: 100%;
-                        transition: opacity 0.35s linear;
+                        transition: opacity 0.1s linear;
                     }
                 }
                 #gapRow {

@@ -12,6 +12,7 @@ function About() {
         </div>
       </section>
       <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
+        <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
           <div id="aboutCol" className="col">
             <div id="voltaText" className="row">

@@ -29,7 +29,7 @@ function Menu({ setIsMenuOpen }) {
               <nav id="menuNav" className="row">
                     <ul id="menuList" className="col">
                         <li>
-                            <h2 id="navLi"><a href="#aboutCon">SOBRE A VOLTA</a></h2>
+                            <h2 id="navLi"><a href="#aboutRow">SOBRE A VOLTA</a></h2>
                         </li>
                         <li>
                             <h2 id="navLi"><a href="#infoNavMenuCon">SOBRE ENERGIA SOLAR</a></h2>
