@@ -17,13 +17,13 @@ function Project() {
 
   return (
     <>
-      <header>
-
+      <header id='projPageHeader'>
+        <ProjectJumbotron data={data}/>
       </header>
-      <main>
+      <main id='projPageMain'>
 
       </main>
-      <footer>
+      <footer id='projPageFooter'>
 
       </footer>
     </>

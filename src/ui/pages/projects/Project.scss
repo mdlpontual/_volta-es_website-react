@@ -1,16 +1,16 @@
 @use "../../../style" as *;
 
-header {
+#projPageHeader {
     @include box-reset-default;
     border: $gb-con_5-dsh-mag;
     height: 100vh;
 }
-main {
+#projPageMain {
     @include box-reset-default;
     border: $gb-con_5-dsh-mag;
     height: 100vh;
 }
-footer {
+#projPageFooter {
     @include box-reset-default;
     border: $gb-con_5-dsh-mag;
     height: 100vh;
