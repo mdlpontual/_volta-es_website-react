@@ -3,7 +3,7 @@ import ProjectCard from "./project-card/ProjectCard";
 import projectsData from "../../../projects/ProjectsDataHub";
 
 function ProjectsNavMenu() {
-  const projectsList = Object.values(projectsData);
+  const projectsList = Object.entries(projectsData);
 
   return (
     <>
@@ -18,8 +18,8 @@ function ProjectsNavMenu() {
         </div>
         <div id="projectNavMainRow" className="row">
           <div id="projectNavMainCol" className="col">
-            {projectsList.map((project, i) => (
-              <ProjectCard title={project.title} cover={project.images[0]} key={i}/>
+            {projectsList.map(([slug, project], i) => (
+              <ProjectCard key={i} title={project.title} cover={project.images[0]} slug={slug}/>
             ))}
           </div>
         </div>
