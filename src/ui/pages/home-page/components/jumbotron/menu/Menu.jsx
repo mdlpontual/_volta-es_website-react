@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../../../assets/imagesHub";
 import { Link } from "react-router-dom";
+import projectsData from "../../../../projects/ProjectsDataHub";
 
 function Menu({ setIsMenuOpen }) {
+    const projectsList = Object.entries(projectsData);
+
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === "Escape") {
@@ -38,13 +41,9 @@ function Menu({ setIsMenuOpen }) {
                         </li>
                         <li>
                             <h2 id="navLi"><a href="#projectNavHeadRow">PROJETOS</a></h2>
-                            <Link to={'/'}><h2 id="projLi">- INDUSTRIA EM CAMARAGIBE</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- PROJETO ACENDE</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- RESIDÊNCIAL EM MARIA FARINHA</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- PROJETO MOJEIRO</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- PROJETOS EM ALDEIA</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- PROJETOS EM GRAVATÁ</h2></Link>
-                            <Link to={'/'}><h2 id="projLi">- OUTROS PROJETOS</h2></Link>
+                            {projectsList.map(([slug, project], i) => (
+                                <Link to={`/${slug}`}><h2 id="projLi">{`- ${project.title}`}</h2></Link>
+                            ))}
                         </li>
                         <li>
                             <h2 id="navLi"><a href="#hpFooterCon">CONTATO</a></h2>
