@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
-import Menu from "../../../home-page/components/jumbotron/menu/Menu";
+import ProjectMenu from "./menu/ProjectMenu";
 
 function ProjectJumbotron({ data }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,11 +24,11 @@ function ProjectJumbotron({ data }) {
         <div id="imageFilter">
           <div id="prjJumboRow" className="row">
             <div id="prjJumboColMenu" className="col">
-              <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
-                {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+              <div id={isMenuOpen ? "prjMenuOpen" : "prjMenuClosed"} className="row">
+                {isMenuOpen && <ProjectMenu setIsMenuOpen={setIsMenuOpen} />}
               </div>
-              <div id="menuIconRow" className="row">
-                <div id="menuIcon" className="col-auto">
+              <div id="prjMenuIconRow" className="row">
+                <div id="prjMenuIcon" className="col-auto">
                   <img className="col-auto btn" 
                       src={symbolSrc}
                       onMouseEnter={handleMouseEnter}

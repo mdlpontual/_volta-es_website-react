@@ -1,16 +1,41 @@
 @use "../../../../../style" as *;
 
-
-
-#prjJumboCon {
+@keyframes zoomInOut {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  #prjJumboCon {
     @include box-reset-default;
-    //border: $gb-con_5-sol-red;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
     position: relative;
+    overflow: hidden;
+    z-index: 0;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: scale(1.2);
+      transform-origin: center;
+      animation: zoomInOut 20s ease-in-out infinite alternate;
+      z-index: -1;
+    }
+  
     #imageFilter {
         @include box-reset-default;
         //border: $gb-con_5-sol-red;
@@ -27,10 +52,10 @@
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
             height: 100%;
-            #menuIconRow {
+            #prjMenuIconRow {
                 @include box-reset-default;
                 //border: $gb-row_2-sol-org;
-                #menuIcon {
+                #prjMenuIcon {
                     @include box-reset-default;
                     //border: $gb-col_2-sol-cyn;
                     img {
@@ -117,7 +142,7 @@
     }
 }
 
-#menuOpen {
+#prjMenuOpen {
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     height: 100%;
@@ -128,19 +153,19 @@
     transition: width 0.75s ease-in-out;
     overflow: hidden;
     text-align: start;
-    #menuCol {
+    #prjMenuCol {
         @include box-reset-default;
         //border: $gb-col_5-sol-cyn;
         position: absolute;
         height: 100%;
-        #menuNav {
+        #prjMenuNav {
             @include box-reset-default;
             //border: $gb-row_2-dsh-org;
             height: fit-content;
             margin: 0px 30px -30px 50px;
             overflow: hidden;
             text-wrap: nowrap;
-            #menuList {
+            #prjMenuList {
                 @include box-reset-default;
                 //border: $gb-col_2-dsh-cyn;
                 list-style: none;
@@ -180,7 +205,7 @@
                 transition: color 0.2s ease-in-out;
             }
         }
-        #menuFooter {
+        #prjMenuFooter {
             @include box-reset-default;
             //border: $gb-row_5-dsh-org;
             height: 60px;
@@ -219,7 +244,7 @@
         }
     }
 }
-#menuClosed {
+#prjMenuClosed {
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     width: 0%; 

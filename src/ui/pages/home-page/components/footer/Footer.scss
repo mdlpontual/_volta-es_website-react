@@ -83,95 +83,96 @@
             }
         }
     }
-    #contactRow {
+}
+
+#contactRow {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-ylw;
+    height: 60vh;
+    background-color: $voltaBlue;
+    justify-content: center;
+    #contactCol {
         @include box-reset-default;
-        //border: $gb-row_5-sol-ylw;
-        height: 60vh;
-        background-color: $voltaBlue;
-        justify-content: center;
-        #contactCol {
+        //border: $gb-col_5-sol-blu;
+        justify-items: center;
+        max-width: 1380px;
+        height: 100%;
+        padding: 50px 50px 25px 50px;
+        #footerLogoRow {
             @include box-reset-default;
-            //border: $gb-col_5-sol-blu;
-            justify-items: center;
-            max-width: 1380px;
-            height: 100%;
-            padding: 50px 50px 25px 50px;
-            #footerLogoRow {
+            //border: $gb-row_5-sol-org;
+            height: 25%;
+            width: 100%;
+            justify-content: center;
+            #footerLogoCol {
                 @include box-reset-default;
-                //border: $gb-row_5-sol-org;
-                height: 25%;
-                width: 100%;
-                justify-content: center;
-                #footerLogoCol {
+                //border: $gb-col_5-sol-cyn;
+                height: 100%;
+                padding: 25px 25px 0 25px;
+                img {
                     @include box-reset-default;
-                    //border: $gb-col_5-sol-cyn;
+                    //border: $gb-elm_2-dsh-lgr;
                     height: 100%;
-                    padding: 25px 25px 0 25px;
-                    img {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        height: 100%;
-                    }
                 }
             }
-            #contactsMainRow {
+        }
+        #contactsMainRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-org;
+            height: 60%;
+            width: 100%;
+            align-content: center;
+            #adressCol {
                 @include box-reset-default;
-                //border: $gb-row_5-sol-org;
-                height: 60%;
-                width: 100%;
+                //border: $gb-col_5-sol-cyn;
+                height: 70%;
+                border-right: 1px solid white;
+                text-align: end;
                 align-content: center;
-                #adressCol {
-                    @include box-reset-default;
-                    //border: $gb-col_5-sol-cyn;
-                    height: 70%;
-                    border-right: 1px solid white;
-                    text-align: end;
-                    align-content: center;
-                    padding: 10px 25px 10px 10px;
-                    justify-items: end;
-                    p {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        width: fit-content;
-                        strong {
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-                #profileContactCol {
-                    @include box-reset-default;
-                    //border: $gb-col_5-sol-cyn;
-                    height: 70%;
-                    border-left: 1px solid white;
-                    text-align: start;
-                    align-content: center;
-                    padding: 10px 10px 10px 25px;
-                    p {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        width: fit-content;
-                        strong {
-                            font-size: 1.2rem;
-                        }
-                    }
-                }
-            }
-            #signaturesRow {
-                @include box-reset-default;
-                //border: $gb-row_5-sol-org;
-                height: 15%;
-                width: 100%;
-                text-align: center;
+                padding: 10px 25px 10px 10px;
+                justify-items: end;
                 p {
                     @include box-reset-default;
                     //border: $gb-elm_2-dsh-lgr;
-                    font-weight: 100;
-                    a {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-lgr;
-                        text-decoration: none;
-                        color: inherit;
+                    width: fit-content;
+                    strong {
+                        font-size: 1.2rem;
                     }
+                }
+            }
+            #profileContactCol {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-cyn;
+                height: 70%;
+                border-left: 1px solid white;
+                text-align: start;
+                align-content: center;
+                padding: 10px 10px 10px 25px;
+                p {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    width: fit-content;
+                    strong {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        #signaturesRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-org;
+            height: 15%;
+            width: 100%;
+            text-align: center;
+            p {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                font-weight: 100;
+                a {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    text-decoration: none;
+                    color: inherit;
                 }
             }
         }
@@ -223,7 +224,8 @@
                 }
             }
         }
-        #contactRow {
+    }
+    #contactRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
             height: 60vh;
@@ -316,5 +318,4 @@
                 }
             }
         }
-    }
 }
