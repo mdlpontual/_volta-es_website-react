@@ -1,1 +1,27 @@
 @use "../../../../../style" as *;
+
+#galleryCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: fit-content;
+    #imgRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: fit-content;
+        padding: 50px 100px;
+        justify-content: center;
+        #imgCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            width: fit-content;
+            align-content: center;
+            img {
+                @include box-reset-default;
+                //border: $gb-elm_5-dsh-lgr;
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
