@@ -20,30 +20,38 @@ function ProjectJumbotron({ data }) {
 
   return (
     <>
-      <section id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${data.images[0]})`}}>
-        <div id="jumboRow" className="row">
-          <div id="jumboColMenu" className="col">
-            <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
-              {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+      <section id="prjJumboCon" className="container-fluid" style={{backgroundImage: `url(${data.images[0]})`}}>
+        <div id="imageFilter">
+          <div id="prjJumboRow" className="row">
+            <div id="prjJumboColMenu" className="col">
+              <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">
+                {isMenuOpen && <Menu setIsMenuOpen={setIsMenuOpen} />}
+              </div>
+              <div id="menuIconRow" className="row">
+                <div id="menuIcon" className="col-auto">
+                  <img className="col-auto btn" 
+                      src={symbolSrc}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      onClick={() => setIsMenuOpen(true)}
+                      alt="ícone Menu"/>
+                </div>
+              </div>
             </div>
-            <div id="menuIconRow" className="row">
-              <div id="menuIcon" className="col-auto">
-                <img className="col-auto btn" 
-                     src={symbolSrc}
-                     onMouseEnter={handleMouseEnter}
-                     onMouseLeave={handleMouseLeave}
-                     onClick={() => setIsMenuOpen(true)}
-                     alt="ícone Menu"/>
+            <div id="prjJumboColLogo" className="col">
+              <div id="voltaPrjJumboLogo" className="row">
+                <div id="voltaLogo" className="col-auto">
+                  <img src={IMG.voltaEsLogo_White} alt="Logo Volta-ES" />
+                </div>
               </div>
             </div>
           </div>
-          <div id="jumboColText" className="col">
-            <div id="voltaJumboLogo" className="row">
-              <div id="voltaLogo" className="col-auto">
-                <img src={IMG.voltaEsLogo_White} alt="Logo Volta-ES" />
-              </div>
+          <div id="prjTitleRow" className="row">
+            <div id="prjTitleCol" className="col">   
+              <h1>{data.title}</h1> 
+              <h5>{data.subtitle}</h5>
             </div>
-        </div>
+          </div>
         </div>
       </section>
     </>

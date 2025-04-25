@@ -2,8 +2,8 @@
 
 #projPageHeader {
     @include box-reset-default;
-    border: $gb-con_5-dsh-mag;
-    height: 100vh;
+    //border: $gb-con_5-dsh-mag;
+    height: fit-content;
 }
 #projPageMain {
     @include box-reset-default;

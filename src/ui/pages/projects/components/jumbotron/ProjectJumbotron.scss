@@ -1,1 +1,232 @@
 @use "../../../../../style" as *;
+
+
+
+#prjJumboCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+    #imageFilter {
+        @include box-reset-default;
+        //border: $gb-con_5-sol-red;
+        background-color: $filterLayer;
+        height: 100%;
+    }
+    #prjJumboRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50%;
+        align-items: center;
+        text-align: center;
+        #prjJumboColMenu {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            #menuIconRow {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                #menuIcon {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    img {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        height: 30px;
+                        margin: 50px;
+                    }
+                }
+            }
+        }
+        #prjJumboColLogo {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            #voltaPrjJumboLogo {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                justify-content: end;
+                #voltaLogo {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    img {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        height: 100px;
+                        margin: 50px;
+                    }
+                }
+            }
+            #prjJumboText {
+                @include box-reset-default;
+                //border: $gb-row_2-sol-org;
+                height: 50%;
+                align-items: center;
+                padding: 50px;
+                #missionTexts {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    border-right: 1px solid white;
+                    padding: 10px;
+                    height: fit-content;
+                    text-align: end;
+                    font-weight: 100;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    #prjTitleRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 50%;
+        #prjTitleCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            height: 100%;
+            width: fit-content;
+            max-width: 100%;
+            align-content: end;
+            padding: 25px;
+            h1 {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                text-align: center;
+                text-wrap: balance;
+                font-size: clamp(3rem, 7vw, 7.5rem);
+                width: 100%;
+                word-break: break-word; // optional safety
+                overflow-wrap: break-word; // optional safety
+                padding-bottom: 20px;
+            }             
+            h5 {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                text-align: center;
+                text-wrap: balance;
+                width: 100%;
+                word-break: break-word; // optional safety
+                overflow-wrap: break-word; // optional safety
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+#menuOpen {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(25, 25, 25, 0.75);
+    transition: width 0.75s ease-in-out;
+    overflow: hidden;
+    text-align: start;
+    #menuCol {
+        @include box-reset-default;
+        //border: $gb-col_5-sol-cyn;
+        position: absolute;
+        height: 100%;
+        #menuNav {
+            @include box-reset-default;
+            //border: $gb-row_2-dsh-org;
+            height: fit-content;
+            margin: 0px 30px -30px 50px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            #menuList {
+                @include box-reset-default;
+                //border: $gb-col_2-dsh-cyn;
+                list-style: none;
+                li {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    a {
+                        text-decoration: none;
+                        color: inherit; 
+                    }
+                    #navLi {
+                        @include box-reset-default;
+                        //border: $gb-col_2-dsh-cyn;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                        }
+                    }
+                    #projLi {
+                        @include box-reset-default;
+                        //border: $gb-col_2-dsh-blu;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        padding-left: 0px;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                        }
+                    }
+                }
+            }
+            h2:hover {
+                color: $sunOrange;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+            }
+        }
+        #menuFooter {
+            @include box-reset-default;
+            //border: $gb-row_5-dsh-org;
+            height: 60px;
+            margin: 30px 30px -30px 50px;
+            overflow: hidden;
+            text-wrap: nowrap;
+            padding-bottom: 15px;
+            position: absolute;
+            bottom: 60px;
+            #followUs {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                color: white;
+                //font-weight: lighter;
+                //font-size: 85%;
+                align-content: end;
+            }
+            h5 {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-weight: lighter;
+                    text-decoration: underline;
+                }
+            }
+            a:hover {
+                color: $sunOrange;
+                cursor: pointer;
+                transition: color 0.2s ease-in-out;
+            }
+            #separator:hover {
+                color: black;
+            }
+        }
+    }
+}
+#menuClosed {
+    @include box-reset-default;
+    //border: $gb-row_5-sol-org;
+    width: 0%; 
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(25, 25, 25, 0.75);
+    transition: width 0.75s ease-in-out 0.25s;
+    overflow: hidden; 
+}
