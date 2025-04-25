@@ -14,6 +14,7 @@
   
   #prjJumboCon {
     @include box-reset-default;
+    //border: $gb-con_5-sol-red;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;

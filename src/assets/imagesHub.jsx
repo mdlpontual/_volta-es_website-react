@@ -42,7 +42,7 @@ const IMG = {
     cartoonFullBackground: new URL('./images/backgrounds/cartoon/CARDS-background-full.jpeg', import.meta.url).href,
     cartoonLeftBackground: new URL('./images/backgrounds/cartoon/CARDS-background-house.jpeg', import.meta.url).href,
     cartoonRightBackground: new URL('./images/backgrounds/cartoon/CARDS-background-panels.jpeg', import.meta.url).href,
-    vaBackground: new URL('./images/backgrounds/cartoon/VA-background.jpeg', import.meta.url).href,
+    vaBackground: new URL('./images/backgrounds/cartoon/VA-background.png', import.meta.url).href,
 
     /*---------------------------projects---------------------------*/
     //Fazenda Camarão

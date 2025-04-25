@@ -20,7 +20,7 @@ const projectsData = {
         powerOutput: "44,3 kWp",
         images: [IMG.STO_00, IMG.STO_01, IMG.STO_02, IMG.STO_03, IMG.STO_04, IMG.STO_05],
         menuPage: "prjGvt",
-        description: "Esta usina foi implantada para atender uma associação de consumidores de energia solar, localizada na área rural de Gravatá. Ela compartilha toda a energia solar gerada com os seus associados, que se situam espalhados por toda região metropolitana, zona da mata e agreste de Pernambuco. Com 204 módulos fotovoltaicos e 108,1 kWp de potência, espalha energia renovável por todo o estado!"
+        description: "Esta usina foi implantada para atender uma associação de consumidores de energia solar. Localizada na área rural de Gravatá, ela compartilha toda a energia solar gerada com os seus associados, que se situam espalhados por toda região metropolitana, zona da mata e agreste de Pernambuco. Com 204 módulos fotovoltaicos e 108,1 kWp de potência, espalha energia renovável por todo o estado."
     },
     condMariaFarinha: {
         title: "RESIDÊNCIAL EM MARIA FARINHA",

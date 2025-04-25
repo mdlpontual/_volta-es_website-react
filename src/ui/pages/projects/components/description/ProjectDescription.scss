@@ -1,1 +1,86 @@
 @use "../../../../../style" as *;
+
+/* #prjDescCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 110vh;
+    justify-items: center;
+    align-content: center;
+    #projsubtitleRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        strong {
+            color: black;
+        }
+    }
+    #projDescRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: fit-content;
+        width: 1300px;
+        align-content: center;
+        padding: 0 50px;
+        gap: 30px;
+        #projDescCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            color: black;
+            height: fit-content;
+            width: 50%;
+            text-align: justify;
+            padding: 10px;
+        }
+        #projProfileCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            color: black;
+            width: 50%;
+            height: fit-content;
+            padding: 10px;
+            text-align: justify;
+            strong {
+                color: black;
+            }
+        }
+    }
+} */
+
+
+@use "../../../../../style" as *;
+
+#prjTextCon {
+    @include box-reset-default;
+    //border: $gb-con_5-sol-red;
+    height: 110vh;
+    justify-items: center;
+    #projTextRow {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-ylw;
+        height: 100%;
+        max-width: 1300px;
+        align-content: center;
+        align-items: center;
+        padding: 50px;
+        #projTextCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            #projDescRow {
+                @include box-reset-default;
+                //border: $gb-row_5-sol-org;
+                color: black;
+                text-align: justify;
+                padding: 10px 0;
+            }
+            #projProfileRow {
+                @include box-reset-default;
+                //border: $gb-row_5-sol-org;
+                color: black;
+                text-align: justify;
+                padding: 10px 0;
+                strong {
+                    color: black;
+                }
+            }
+        }
+    }
+}
