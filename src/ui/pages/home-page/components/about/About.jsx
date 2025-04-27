@@ -1,9 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
 
 function About() {
-  const logoRowRef = useRef(null); // 1. Create a ref
-
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-in-target');
   
@@ -45,9 +43,9 @@ function About() {
       <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
         <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
-          <div id="aboutCol" className="col fade-in-target" style={{ "--delay": `${2 * 75}ms` }}>
+          <div id="aboutCol" className="col">
             <div id="voltaText" className="row">
-              <div id="voltaTextBox" className="col-md-8 col-sm-12">
+              <div id="voltaTextBox" className="col-md-8 col-sm-12 fade-in-target" style={{ "--delay": `${1 * 50}ms` }}>
                 <p>
                   A Volta Engenharia oferece a seus clientes a oportunidade de gerar sua própria energia.
                   <br />
@@ -57,13 +55,13 @@ function About() {
                   <strong>- Volta Engenharia Sustentável</strong>
                 </p>
               </div>
-              <div id="voltaImgBox" className="col" style={{backgroundImage: `url(${IMG.aboutBox})`}}></div>
+              <div id="voltaImgBox" className="col fade-in-target" style={{backgroundImage: `url(${IMG.aboutBox})`, "--delay": `${2 * 100}ms`}}></div>
             </div>
             <div id="voltaVideo" className="row">
-              <div id="voltaLogoBox" className="col">
+              <div id="voltaLogoBox" className="col fade-in-target" style={{ "--delay": `${3 * 50}ms` }}>
                 <img src={IMG.voltaEsLogo_White} className="row" lt="Volta Logo - branco com fundo azul" />
               </div>
-              <div id="voltaVideoBox" className="col-md-8 col-sm-12">
+              <div id="voltaVideoBox" className="col-md-8 col-sm-12 fade-in-target" style={{ "--delay": `${4 * 100}ms` }}>
                 <iframe src="https://www.youtube.com/embed/X4mb_uuWSI0?si=5pPRmcSoXIjBJe8Z" 
                         title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
@@ -76,7 +74,7 @@ function About() {
         </div>
         <div id="sustRow" className="row">
           <div id="sustCol" className="col">
-          <div id="sustTextRow" className="row fade-in-target" style={{ "--delay": `${3 * 75}ms` }}>
+            <div id="sustTextRow" className="row fade-in-target" style={{ "--delay": `${5 * 50}ms` }}>
               <div id="sustTextCol" className="col">
                 <div id="topTextRow" className="row">
                   <p>
