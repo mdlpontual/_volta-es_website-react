@@ -5,34 +5,39 @@ function About() {
   const logoRowRef = useRef(null); // 1. Create a ref
 
   useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-target');
+  
+    elements.forEach((el, index) => {
+      el.dataset.index = index; // <- set the index in a data attribute
+    });
+  
     const observer = new IntersectionObserver(
       (entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('fade-in-up');
-            observer.unobserve(entry.target); // 2. Stop observing after animation
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.2 } // 20% visible triggers it
-    );
-
-    if (logoRowRef.current) {
-      observer.observe(logoRowRef.current);
-    }
-
-    return () => {
-      if (logoRowRef.current) {
-        observer.unobserve(logoRowRef.current);
+      {
+        threshold: 0.25
       }
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
     };
   }, []);
+  
 
   return (
     <>
       <section id="logoCon" className="container-fluid">
-        <div id="logoRow" className="row" ref={logoRowRef}>
-          <div id="logoCol" className="col">
+        <div id="logoRow" className="row">
+          <div id="logoCol" className="col fade-in-target" style={{ "--delay": `${0 * 75}ms` }}>
             <img src={IMG.voltaEsLogo_Blue} alt="Volta Logo - azul com fundo branco" />
           </div>
         </div>
@@ -40,7 +45,7 @@ function About() {
       <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
         <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
-          <div id="aboutCol" className="col">
+          <div id="aboutCol" className="col fade-in-target" style={{ "--delay": `${2 * 75}ms` }}>
             <div id="voltaText" className="row">
               <div id="voltaTextBox" className="col-md-8 col-sm-12">
                 <p>
@@ -61,15 +66,17 @@ function About() {
               <div id="voltaVideoBox" className="col-md-8 col-sm-12">
                 <iframe src="https://www.youtube.com/embed/X4mb_uuWSI0?si=5pPRmcSoXIjBJe8Z" 
                         title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                </iframe>
               </div>
             </div>
           </div>
         </div>
         <div id="sustRow" className="row">
           <div id="sustCol" className="col">
-            <div id="sustTextRow" className="row">
+          <div id="sustTextRow" className="row fade-in-target" style={{ "--delay": `${3 * 75}ms` }}>
               <div id="sustTextCol" className="col">
                 <div id="topTextRow" className="row">
                   <p>

@@ -46,8 +46,9 @@ function Infos() {
                 <div id="howItWorksVideoCol" className="col">
                   <iframe src="https://www.youtube.com/embed/F3gDyuhZUIM?si=Kq8-wbGu0u-a2pmp" 
                         title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
                   </iframe>
                 </div>
               </div>
