@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import IMG from "../../../../../assets/imagesHub";
 
 function About() {
+  const logoRowRef = useRef(null); // 1. Create a ref
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+            observer.unobserve(entry.target); // 2. Stop observing after animation
+          }
+        });
+      },
+      { threshold: 0.2 } // 20% visible triggers it
+    );
+
+    if (logoRowRef.current) {
+      observer.observe(logoRowRef.current);
+    }
+
+    return () => {
+      if (logoRowRef.current) {
+        observer.unobserve(logoRowRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
       <section id="logoCon" className="container-fluid">
-        <div id="logoRow" className="row">
+        <div id="logoRow" className="row" ref={logoRowRef}>
           <div id="logoCol" className="col">
             <img src={IMG.voltaEsLogo_Blue} alt="Volta Logo - azul com fundo branco" />
           </div>
