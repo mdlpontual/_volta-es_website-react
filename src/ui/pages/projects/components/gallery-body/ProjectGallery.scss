@@ -7,8 +7,8 @@
     #imgRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: fit-content;
-        padding: 50px 100px;
+        height: 100vh;
+        padding: 50px 25px;
         justify-content: center;
         #imgCol {
             @include box-reset-default;
