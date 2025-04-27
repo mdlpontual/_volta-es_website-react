@@ -76,7 +76,7 @@ function Infos() {
             <div id="checkOurProjectsRow" className="row">
               <h5>Confira nossa galeria de projetos realizados!</h5>
               <div id="arrowDownCol" className="col">
-                <img src={IMG.arrowDownIcon} alt="" />
+                <a href="#projectNavHeadRow"><img src={IMG.arrowDownIcon} alt="seta para baixo" /></a>
               </div>
             </div>
           </div>
