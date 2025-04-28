@@ -261,6 +261,31 @@
     }
 }
 
+@keyframes enablePointerEvents {
+    to {
+      pointer-events: auto;
+    }
+  }
+  
+  #navButtonsRow {
+    .fade-in-target {
+      opacity: 0;
+      transform: translateY(75px);
+      transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+      pointer-events: none;
+    }
+  
+    .fade-in-up {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+      transition-delay: calc(var(--delay, 0ms));
+      animation: enablePointerEvents 0s linear forwards;
+      animation-delay: calc(var(--delay, 0ms) + 0.75s); // <<< YOUR fade delay + extra time
+    }
+  }
+  
+
+
 @media only screen and (max-width: 1600px) {
     #infosCon {
         #prjPhasesRow {
@@ -272,4 +297,3 @@
         }
     }
 }
-  

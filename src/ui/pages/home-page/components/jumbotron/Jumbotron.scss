@@ -70,8 +70,8 @@
                 //border: $gb-row_2-sol-org;
                 height: 50%;
                 width: 50%;
-                align-items: center;
-                padding: 50px 50px 50px 50px;
+                align-items: end;
+                padding: 50px 50px 0px 50px;
                 #missionTexts {
                     @include box-reset-default;
                     //border: $gb-elm_2-dsh-lgr;

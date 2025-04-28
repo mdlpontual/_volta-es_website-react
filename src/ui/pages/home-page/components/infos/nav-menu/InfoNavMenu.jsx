@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import IMG from "../../../../../../assets/imagesHub";
 
 function InfoNavMenu() {
@@ -7,6 +7,34 @@ function InfoNavMenu() {
     panel: IMG.panelIcon_White,
     projects: IMG.projectsIcon_White,
   });
+
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-target');
+  
+    elements.forEach((el, index) => {
+      el.dataset.index = index; // <- set the index in a data attribute
+    });
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 1
+      }
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
 
   const handleMouseEnter = (key, colorIcon) => {
     setTimeout(() => {
@@ -22,8 +50,8 @@ function InfoNavMenu() {
 
   return (
     <>
-      <div id="navButtonsRow" className="row">
-        <div id="etapasCol" className="col" 
+      <div id="navButtonsRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
+        <div id="etapasCol" className="col fade-in-target" style={{ "--delay": `${1 * 300}ms` }} 
             onMouseEnter={() => handleMouseEnter("phases", IMG.phasesIcon_Color)}
             onMouseLeave={() => handleMouseLeave("phases", IMG.phasesIcon_White)}>
           <a href="#prjPhasesRow">
@@ -38,7 +66,7 @@ function InfoNavMenu() {
             </div>
           </a>
         </div>
-        <div id="comoFuncionaCol" className="col" 
+        <div id="comoFuncionaCol" className="col fade-in-target" style={{ "--delay": `${2 * 350}ms` }}  
             onMouseEnter={() => handleMouseEnter("panel", IMG.panelIcon_Color)}
             onMouseLeave={() => handleMouseLeave("panel", IMG.panelIcon_White)}>
           <a href="#howItWorksRow">
@@ -53,7 +81,7 @@ function InfoNavMenu() {
             </div>
           </a>
         </div>
-        <div id="nossosProjetosCol" className="col" 
+        <div id="nossosProjetosCol" className="col fade-in-target" style={{ "--delay": `${3 * 400}ms` }}  
             onMouseEnter={() => handleMouseEnter("projects", IMG.projectsIcon_Color)}
             onMouseLeave={() => handleMouseLeave("projects", IMG.projectsIcon_White)}>
           <a href="#projectNavHeadRow">
