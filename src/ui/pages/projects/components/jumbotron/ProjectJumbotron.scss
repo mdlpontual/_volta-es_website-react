@@ -36,7 +36,15 @@
       animation: zoomInOut 20s ease-in-out infinite alternate;
       z-index: -1;
     }
-  
+    #preImageFilter{
+        @include box-reset-default;
+        //border: $gb-col_5-sol-blu;
+        position: absolute;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
     #imageFilter {
         @include box-reset-default;
         //border: $gb-con_5-sol-red;
@@ -46,9 +54,12 @@
     #prjJumboRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50%;
+        height: 100%;
+        width: 50%;
         align-items: center;
         text-align: center;
+        position: absolute;
+        z-index: 1;
         #prjJumboColMenu {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -109,7 +120,7 @@
     #prjTitleRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 50%;
+        height: 100%;
         #prjTitleCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -147,7 +158,7 @@
     @include box-reset-default;
     //border: $gb-row_5-sol-org;
     height: 100%;
-    width: 50%;
+    width: 100%;
     position: absolute;
     z-index: 3;
     background-color: rgba(25, 25, 25, 0.75);
@@ -255,4 +266,28 @@
     background-color: rgba(25, 25, 25, 0.75);
     transition: width 0.75s ease-in-out 0.25s;
     overflow: hidden; 
+}
+
+#prjJumboCon {
+    .fade-out-target {
+        opacity: 1;
+        transition: opacity 1s ease-out;
+    }
+    
+    .fade-out-filter {
+        opacity: 0 !important;
+        transition: opacity 1.5s ease-out;
+    }
+    
+    .fade-in-target {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 2s ease-out, transform 2s ease-out;
+    }
+    
+    .fade-in-up {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+        transition-delay: calc(var(--delay, 0ms));
+    }
 }
