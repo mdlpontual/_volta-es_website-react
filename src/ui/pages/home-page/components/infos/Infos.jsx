@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
 import InfoNavMenu from "./nav-menu/InfoNavMenu";
-import InfoNavBar from "./navbar/InfoNavbar";
 
 function Infos() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-target');
+  
+    elements.forEach((el, index) => {
+      el.dataset.index = index; // <- set the index in a data attribute
+    });
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 1
+      }
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <>
       <section id="infoNavMenuCon" className="container-fluid">
@@ -21,13 +48,13 @@ function Infos() {
       </section>
       <section id="infosCon" className="container-fluid" style={{backgroundImage: `url(${IMG.infosBackground})`}}>
         <div id="divider" className="row"></div>
-        <div id="prjPhasesRow" className="row">
-          <div id="prjPhasesCol" className="col">
+        <div id="prjPhasesRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
+          <div id="prjPhasesCol" className="col fade-in-target" style={{ "--delay": `${1 * 500}ms` }}>
             <img src={IMG.projectPhasesDiagram} alt="Diagrama exemplo das etapas de um projeto" />
           </div>
         </div>
         <div id="howItWorksRow" className="row">
-          <div id="howItWorksCol" className="col">
+          <div id="howItWorksCol" className="col fade-in-target" style={{ "--delay": `${1 * 200}ms` }}>
             <div id="howItWorksTextCon" className="container-fluid">
               <div id="howItWorksTextRow" className="row">
                 <div id="howItWorksTextCol" className="col">
@@ -56,7 +83,7 @@ function Infos() {
           </div>
         </div>
         <div id="letsTalkRow" className="row">
-          <div id="letsTalkCol" className="col">
+          <div id="letsTalkCol" className="col fade-in-target" style={{ "--delay": `${1 * 200}ms` }}>
             <div id="letsTalkTextRow" className="row">
               <div id="letsTalkTextCol" className="col">
                 <h1>Precisa de Ajuda?</h1>
@@ -74,9 +101,9 @@ function Infos() {
                 </div>
               </div>
             </div>
-            <div id="checkOurProjectsRow" className="row">
+            <div id="checkOurProjectsRow" className="row fade-in-target" style={{ "--delay": `${1 * 150}ms` }}>
               <h5>Confira nossa galeria de projetos realizados!</h5>
-              <div id="arrowDownCol" className="col">
+              <div id="arrowDownCol" className="col-auto">
                 <a href="#projectNavHeadRow"><img src={IMG.arrowDownIcon} alt="seta para baixo" /></a>
               </div>
             </div>

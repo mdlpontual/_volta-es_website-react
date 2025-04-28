@@ -199,7 +199,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: calc((100% / 3) - 25px);
-        padding-bottom: 100px;
+        padding: 0 25px 100px 25px;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -210,6 +210,7 @@
             max-width: 1380px;
             align-content: center;
             position: relative;
+            justify-items: center;
             #letsTalkTextRow {
                 @include box-reset-default;
                 //border: $gb-row_2-sol-org;
@@ -244,17 +245,23 @@
             #checkOurProjectsRow {
                 @include box-reset-default;
                 //border: $gb-row_2-sol-org;
+                height: 150px;
                 width: 100%;
-                position:absolute;
+                position: absolute;
                 bottom: 0;
+                justify-content: center;
                 #arrowDownCol {
                     @include box-reset-default;
-                    //border: $gb-col_2-sol-cyn;
+                    // border: $gb-col_2-sol-cyn;
+                    border-radius: 50%;
                     height: 75px;
                     padding: 10px;
                     img {
                         height: 100%;
                     }
+                }
+                #arrowDownCol:hover {
+                    background-color: $voltaBlue;
                 }
             }
         }
@@ -265,24 +272,39 @@
     to {
       pointer-events: auto;
     }
-  }
+}
   
-  #navButtonsRow {
+#navButtonsRow {
     .fade-in-target {
-      opacity: 0;
-      transform: translateY(75px);
-      transition: opacity 0.75s ease-out, transform 0.75s ease-out;
-      pointer-events: none;
+        opacity: 0;
+        transform: translateY(75px);
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+        pointer-events: none;
     }
-  
+
     .fade-in-up {
-      opacity: 1 !important;
-      transform: translateY(0) !important;
-      transition-delay: calc(var(--delay, 0ms));
-      animation: enablePointerEvents 0s linear forwards;
-      animation-delay: calc(var(--delay, 0ms) + 0.75s); // <<< YOUR fade delay + extra time
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition-delay: calc(var(--delay, 0ms));
+        animation: enablePointerEvents 0s linear forwards;
+        animation-delay: calc(var(--delay, 0ms) + 0.75s); // <<< YOUR fade delay + extra time
     }
-  }
+}
+
+#infosCon {
+    .fade-in-target {
+        opacity: 0;
+        transform: translateY(75px);
+        transition: opacity 0.75s ease-out, transform 0.75s ease-out;
+    }
+    .fade-in-up {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition-delay: calc(var(--delay, 0ms));
+    }
+}
+  
+  
   
 
 

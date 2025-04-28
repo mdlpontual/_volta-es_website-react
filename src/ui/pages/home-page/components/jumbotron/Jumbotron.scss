@@ -21,7 +21,7 @@
             position: absolute;
             z-index: 0;
             height: 100%;
-            background-color: rgb(20, 20, 20);
+            background-color: rgb(61, 61, 61);
         }
         #jumboColMenu {
             @include box-reset-default;
@@ -225,7 +225,7 @@
     
     .fade-out-filter {
         opacity: 0 !important;
-        transition: opacity 2s ease-out 1.5s;
+        transition: opacity 1.75s ease-out 1.5s;
     }
     
     .fade-in-target {
