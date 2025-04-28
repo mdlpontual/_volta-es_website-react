@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
 import ContactFooter from "./contacts/ContactFooter";
 
 function Footer() {
+  useEffect(() => {
+    const elements = document.querySelectorAll('.fade-in-target');
+  
+    elements.forEach((el, index) => {
+      el.dataset.index = index; // <- set the index in a data attribute
+    });
+  
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.25
+      }
+    );
+  
+    elements.forEach(el => observer.observe(el));
+  
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
     <>
       <section id="hpFooterCon" className="container-fluid">
@@ -13,7 +41,7 @@ function Footer() {
                 <h4>Parceiros:</h4>
               </div>
             </div>
-            <div id="partnersLogosRow" className="row">
+            <div id="partnersLogosRow" className="row fade-in-target" style={{ "--delay": `${0 * 75}ms` }}>
               <div id="partnersLogoCol" className="col-auto">
                 <a href="https://www.fronius.com/pt-br/brasil/energia-solar/proprietarios-de-casas">
                   <img id="logoFronius" src={IMG.froniusLogo} alt="logo Fronius" />

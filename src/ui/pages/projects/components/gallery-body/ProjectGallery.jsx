@@ -8,7 +8,7 @@ function ProjectGallery({ data }) {
             <section id="galleryCon" className="container-fluid">
                 {imagesArr.map((img, i) => (
                     <div id="imgRow" className="row">
-                        <div id="imgCol" className="col-auto    ">
+                        <div id="imgCol" className="col-auto">
                             <img src={img} alt="Imagem do projeto"/>
                         </div>
                     </div>

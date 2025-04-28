@@ -262,6 +262,7 @@
                 }
                 #arrowDownCol:hover {
                     background-color: $voltaBlue;
+                    transition: background-color 0.1s ease-in;
                 }
             }
         }
