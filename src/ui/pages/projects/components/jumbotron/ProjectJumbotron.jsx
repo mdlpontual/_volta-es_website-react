@@ -40,9 +40,7 @@ function ProjectJumbotron({ data }) {
             </div>
             <div id="prjJumboColLogo" className="col">
               <div id="voltaPrjJumboLogo" className="row">
-                <div id="voltaLogo" className="col-auto">
-                  <img src={IMG.voltaEsLogo_White} alt="Logo Volta-ES" />
-                </div>
+                <div id="voltaLogo" className="col-auto"></div>
               </div>
             </div>
           </div>
