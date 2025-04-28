@@ -86,7 +86,7 @@ function Jumbotron() {
             </div>
             <div id="menuIconRow" className="row">
               <div id="menuIcon" className="col-auto">
-                <img className="col-auto btn" 
+                <img className="col-auto" 
                      src={symbolSrc}
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
@@ -101,7 +101,7 @@ function Jumbotron() {
                 <img src={IMG.voltaEsLogo_White} alt="Logo Volta-ES" />
               </div>
             </div>
-            <div id="jumboText" className="row fade-in-target" style={{ "--delay": `${2 * 750}ms` }}>
+            <div id="jumboText" className="row fade-in-target" style={{ "--delay": `${2 * 500}ms` }}>
               <div id="missionTexts" className="col-auto">
                 <p className={isFading ? "fade-out" : "fade-in"}>
                   {currentTxt}

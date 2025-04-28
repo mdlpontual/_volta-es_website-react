@@ -19,37 +19,27 @@
             #projProfileRow {
                 @include box-reset-default;
                 //border: $gb-row_5-sol-org;
-                #projLogoCol {
-                    @include box-reset-default;
-                    //border: $gb-col_2-sol-cyn;
-                    padding: 10px 10px 10px 10px;
-                    align-content: center;
-                    justify-items: end;
-                    img {
-                        @include box-reset-default;
-                        //border: $gb-elm_2-dsh-grn;
-                        max-width: 190px;
-                    }
-                }
+                align-items: center;
                 #projProfileCol {
                     @include box-reset-default;
                     //border: $gb-col_2-sol-cyn;
+                    height: 100%;
                     color: black;
-                    padding: 10px 10px;
-                    min-width: fit-content;
+                    padding: 10px 50px 10px 0px;
                     h4, strong {
                         @include box-reset-default;
                         //border: $gb-elm_2-dsh-grn;
                         color: black;
                     }
                 }
-            }
-            #projDescRow {
-                @include box-reset-default;
-                //border: $gb-row_5-sol-org;
-                color: black;
-                text-align: justify;
-                padding: 10px 0;
+                #projDescCol {
+                    @include box-reset-default;
+                    //border: $gb-col_2-sol-cyn;
+                    color: black;
+                    text-align: justify;
+                    padding: 10px 0 0 50px;
+                    border-left: 1px solid black;
+                }
             }
         }
     }

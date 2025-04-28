@@ -23,7 +23,7 @@ function Menu({ setIsMenuOpen }) {
             <menu id="menuCol" className="col">
               <div id="menuIconRow" className="row">
                 <div id="menuIcon" className="col-auto">
-                  <img className="col-auto btn" 
+                  <img className="col-auto" 
                         src={IMG.menuIconOrange} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="ícone Menu"/>
