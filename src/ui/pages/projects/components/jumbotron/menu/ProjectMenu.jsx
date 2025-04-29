@@ -3,7 +3,7 @@ import IMG from "../../../../../../assets/imagesHub";
 import { Link } from "react-router-dom";
 import projectsData from "../../../../projects/ProjectsDataHub";
 
-function ProjectMenu({ setIsMenuOpen }) {
+function ProjectMenu({ setIsMenuOpen, slug }) {
     const projectsList = Object.entries(projectsData);
 
     useEffect(() => {
@@ -32,12 +32,14 @@ function ProjectMenu({ setIsMenuOpen }) {
               <nav id="prjMenuNav" className="row">
                     <ul id="prjMenuList" className="col">
                         <li>
-                            <h2 id="navLi"><a href="#aboutRow">PÁGINA INICIAL</a></h2>
+                            <Link to="/"><h2 id="navLi">PÁGINA INICIAL</h2></Link>
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#projectNavHeadRow">PROJETOS</a></h2>
-                            {projectsList.map(([slug, project], i) => (
-                                <Link to={`/${slug}`}><h2 id="projLi">{`- ${project.title}`}</h2></Link>
+                            <h2>PROJETOS</h2>
+                            {projectsList.map(([subSlug, project], i) => (
+                                <Link to={`/${subSlug}`} key={i} style={slug === subSlug ? {color: "orange"} : {color: "white"}}>
+                                    <h2 id="projLi">{`- ${project.title}`}</h2>
+                                </Link>
                             ))}
                         </li>
                         <li>

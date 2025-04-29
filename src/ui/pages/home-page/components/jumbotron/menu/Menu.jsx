@@ -42,7 +42,7 @@ function Menu({ setIsMenuOpen }) {
                         <li>
                             <h2 id="navLi"><a href="#projectNavHeadRow">PROJETOS</a></h2>
                             {projectsList.map(([slug, project], i) => (
-                                <Link to={`/${slug}`}><h2 id="projLi">{`- ${project.title}`}</h2></Link>
+                                <Link to={`/${slug}`} key={i}><h2 id="projLi">{`- ${project.title}`}</h2></Link>
                             ))}
                         </li>
                         <li>

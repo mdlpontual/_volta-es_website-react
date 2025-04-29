@@ -39,7 +39,7 @@ function ProjectGallery({ data }) {
         <> 
             <section id="galleryCon" className="container-fluid fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
                 {imagesArr.map((img, i) => (
-                    <div id="imgRow" className="row fade-in-target" style={{ "--delay": `${1 * 300}ms` }}>
+                    <div key={i} id="imgRow" className="row fade-in-target" style={{ "--delay": `${1 * 300}ms` }}>
                         <div id="imgCol" className="col-auto">
                             <img src={img} alt="Imagem do projeto"/>
                         </div>

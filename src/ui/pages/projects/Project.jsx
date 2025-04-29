@@ -1,5 +1,4 @@
 import React from 'react';
-import IMG from '../../../assets/imagesHub';
 import { useParams } from 'react-router-dom';
 import projectsData from "../projects/ProjectsDataHub";
 import ProjectJumbotron from "./components/jumbotron/ProjectJumbotron";
@@ -19,7 +18,7 @@ function Project() {
   return (
     <>
       <header id='projPageHeader'>
-        <ProjectJumbotron data={data}/>
+        <ProjectJumbotron data={data} slug={slug}/>
       </header>
       <main id='projPageMain'>
         <ProjectDescription data={data}/>

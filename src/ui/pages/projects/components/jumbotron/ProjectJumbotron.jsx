@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
 import ProjectMenu from "./menu/ProjectMenu";
 
-function ProjectJumbotron({ data }) {
+function ProjectJumbotron({ data, slug }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [symbolSrc, setSymbolSrc] = useState(IMG.menuIconWhite);
 
@@ -58,7 +58,7 @@ function ProjectJumbotron({ data }) {
           <div id="prjJumboRow" className="row">
             <div id="prjJumboColMenu" className="col">
               <div id={isMenuOpen ? "prjMenuOpen" : "prjMenuClosed"} className="row">
-                {isMenuOpen && <ProjectMenu setIsMenuOpen={setIsMenuOpen} />}
+                {isMenuOpen && <ProjectMenu setIsMenuOpen={setIsMenuOpen} slug={slug}/>}
               </div>
               <div id="prjMenuIconRow" className="row">
                 <div id="prjMenuIcon" className="col-auto">
