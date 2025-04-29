@@ -2,12 +2,12 @@
 
 #hpFooterCon {
     @include box-reset-default;
-    //border: $gb-con_5-sol-red;
-    height: 100vh;
+    // $gb-con_5-sol-red;
+    height: fit-content;
     #partnersRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 40vh;
+        height: fit-content;
         align-items: center;
         text-align: center;
         #partnersCol {
@@ -88,7 +88,8 @@
 #contactRow {
     @include box-reset-default;
     //border: $gb-row_5-sol-ylw;
-    height: 60vh;
+    max-height: 60vh;
+    height: fit-content;
     background-color: $voltaBlue;
     justify-content: center;
     #contactCol {

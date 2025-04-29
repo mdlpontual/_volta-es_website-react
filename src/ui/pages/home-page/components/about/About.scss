@@ -125,7 +125,7 @@
                             #tallCase {
                                 @include box-reset-default;
                                 //border: $gb-col_2-dsh-cyn;
-                                font-size: 2rem;
+                                font-size: clamp(1.65rem, 4vw, 2rem);
                             }
                         }
                     }
@@ -142,6 +142,68 @@
                             p {
                                 @include box-reset-default;
                                 //border: $gb-col_2-dsh-blu;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #logoCon {
+        #logoRow {
+            #logoCol {
+                img {
+                    height: 100px;
+                }
+            }
+        }
+    }
+    #aboutCon {
+        height: fit-content;
+        #aboutRow {
+            height: 100vh;
+            #aboutCol {
+                height: 100%;
+                align-content: center;
+                #voltaText {
+                    height: fit-content;
+                    //padding-bottom: 0;
+                    gap: 0px;
+                    #voltaTextBox {
+                        padding: 25px;
+                    }
+                    #voltaImgBox {
+                        visibility: hidden;
+                    }
+                }
+                #voltaVideo {
+                    height: 50%;
+                    #voltaLogoBox {
+                        height: 50%;
+                    }
+                    #voltaVideoBox {
+                        height: 50%;
+                    }
+                }
+            }
+        }
+        #sustRow {
+            #sustCol {
+                #sustTextRow {
+                    #sustTextCol {
+                        #topTextRow {
+                            p {
+                                font-size: 0.9rem;
+                            }
+                        }
+                        #bulletPointsRow {
+                            #bulletPointsCol {
+                                p {
+                                    font-size: 0.9rem;
+                                }
                             }
                         }
                     }
