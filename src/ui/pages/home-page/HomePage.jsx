@@ -20,7 +20,7 @@ function HomePage() {
         <ProjectsNavMenu /> */}
       </main>
       <footer>
-        {/* <Footer /> */}
+        <Footer />
       </footer>
     </>
   );

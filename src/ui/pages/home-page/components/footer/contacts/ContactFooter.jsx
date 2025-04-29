@@ -12,7 +12,7 @@ function ContactFooter() {
             </div>
           </div>
           <div id="contactsMainRow" className="row">
-            <div id="adressCol" className="col">
+            <div id="adressCol" className="col-auto">
               <p>
                 <strong>VOLTA</strong> – Engenharia Sustentável
                 <br />
@@ -23,7 +23,7 @@ function ContactFooter() {
                 CEP 50050-135
               </p>
             </div>
-            <div id="profileContactCol" className="col">
+            <div id="profileContactCol" className="col-auto">
               <p>
                   <strong>Paulo Fernando Pontual</strong>
                   <br />
