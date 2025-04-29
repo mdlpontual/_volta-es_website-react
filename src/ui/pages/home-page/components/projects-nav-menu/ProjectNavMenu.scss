@@ -129,6 +129,88 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #projectNavMenuCon {
+        #projectNavHBufferRow {
+            height: 0;
+            visibility: hidden;
+        }
+        #projectNavMainRow {
+            #projectNavMainCol {
+                #projectCardRow {
+                    h3 {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        padding-left: 0px;
+                        width: 100%;
+                        position: absolute;
+                        z-index: 2;
+                        align-self: center;
+                        visibility: visible;
+                        text-align: center;
+                    }
+                    #titleBox {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        position: absolute;
+                        z-index: 1;
+                        height: 100%;
+                        align-content: center;
+                        background-color: rgba(25, 25, 25, 0.50);
+                        visibility: visible;
+                        opacity: 100%;
+                    }
+                }
+                #hoverBox:hover {
+                    #projectCardRow {
+                        img {
+                            filter: grayscale(0%);
+                        }
+                        h3 {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            padding-left: 0px;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 2;
+                            align-self: center;
+                            visibility: visible;
+                            text-align: center;
+                        }
+                        h3:hover {
+                            color: $sunOrange;
+                        }
+                        #titleBox {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            position: absolute;
+                            z-index: 1;
+                            height: 100%;
+                            align-content: center;
+                            background-color: rgba(25, 25, 25, 0.50);
+                            opacity: 100%;
+                            transition: opacity 0.1s linear;
+                        }
+                    }
+                    #gapRow {
+                        @include box-reset-default;
+                        //border: $gb-row_2-dsh-ylw;
+                        height: 5px;
+                        background-color: $sunOrange;
+                        transition: height 0.35s linear;
+                    }
+                }
+            }
+        }
+        #projectNavFooterRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: 50vh;
+        }
+    }
+}
+
+
 #projectNavHeadCol {
     .fade-in-target {
         opacity: 0;
