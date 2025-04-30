@@ -4,7 +4,7 @@ function ProjectGallery({ data }) {
     const imagesArr = Object.values(data.images);
 
     useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); // select both classes
+    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); 
     
     elements.forEach((el, index) => {
         el.dataset.index = index;
