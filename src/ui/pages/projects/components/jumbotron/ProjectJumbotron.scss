@@ -294,3 +294,253 @@
         transition-delay: calc(var(--delay, 0ms));
     }
 }
+
+@media only screen and (max-width: 768px) { 
+    #prjJumboCon {
+        @include box-reset-default;
+        //border: $gb-con_5-sol-red;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+      
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image: inherit;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transform: scale(1.2);
+          transform-origin: center;
+          animation: zoomInOut 20s ease-in-out infinite alternate;
+          z-index: -1;
+        }
+        #preImageFilter{
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            position: absolute;
+            z-index: 0;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+        }
+        #imageFilter {
+            @include box-reset-default;
+            //border: $gb-con_5-sol-red;
+            background-color: $filterLayer;
+            height: 100%;
+        }
+        #prjJumboRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            z-index: 1;
+            #prjJumboColMenu {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                height: 100%;
+                #prjMenuIconRow {
+                    @include box-reset-default;
+                    //border: $gb-row_2-sol-org;
+                    #prjMenuIcon {
+                        @include box-reset-default;
+                        //border: $gb-col_2-sol-cyn;
+                        img {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 30px;
+                            margin: 50px;
+                        }
+                    }
+                }
+            }
+            #prjJumboColLogo {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                height: 100%;
+                #voltaPrjJumboLogo {
+                    @include box-reset-default;
+                    //border: $gb-row_2-sol-org;
+                    justify-content: end;
+                    #voltaLogo {
+                        @include box-reset-default;
+                        //border: $gb-col_2-sol-cyn;
+                        img {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 60px;
+                            margin: 50px;
+                        }
+                    }
+                }
+                #prjJumboText {
+                    @include box-reset-default;
+                    //border: $gb-row_2-sol-org;
+                    height: 50%;
+                    align-items: center;
+                    padding: 50px;
+                    #missionTexts {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        border-right: 1px solid white;
+                        padding: 10px;
+                        height: fit-content;
+                        text-align: end;
+                        font-weight: 100;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+        #prjTitleRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: 100%;
+            #prjTitleCol {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                height: 100%;
+                width: fit-content;
+                max-width: 100%;
+                align-content: end;
+                padding: 15px;
+                h1 {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    text-align: center;
+                    text-wrap: balance;
+                    font-size: clamp(3rem, 7vw, 7.5rem);
+                    width: 100%;
+                    word-break: break-word; // optional safety
+                    overflow-wrap: break-word; // optional safety
+                    padding-bottom: 20px;
+                }             
+                h5 {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    text-align: center;
+                    text-wrap: balance;
+                    width: 100%;
+                    word-break: break-word; // optional safety
+                    overflow-wrap: break-word; // optional safety
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    
+    #prjMenuOpen {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-org;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        background-color: rgba(25, 25, 25, 0.90);
+        transition: width 0.75s ease-in-out;
+        overflow: hidden;
+        text-align: start;
+        #prjMenuCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-cyn;
+            position: absolute;
+            height: 100%;
+            #prjMenuNav {
+                @include box-reset-default;
+                //border: $gb-row_2-dsh-org;
+                height: fit-content;
+                margin: 0px 30px -30px 50px;
+                overflow: hidden;
+                text-wrap: nowrap;
+                #prjMenuList {
+                    @include box-reset-default;
+                    //border: $gb-col_2-dsh-cyn;
+                    list-style: none;
+                    li {
+                        @include box-reset-default;
+                        //border: $gb-col_2-dsh-cyn;
+                        a {
+                            text-decoration: none;
+                            color: inherit; 
+                        }
+                        #navLi {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-cyn;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            a {
+                                text-decoration: none;
+                                color: inherit; 
+                            }
+                        }
+                        #projLi {
+                            @include box-reset-default;
+                            //border: $gb-col_2-dsh-blu;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            padding-left: 0px;
+                            a {
+                                text-decoration: none;
+                                color: inherit; 
+                            }
+                        }
+                        #navLi:hover, #projLi:hover {
+                            color: $sunOrange;
+                            cursor: pointer;
+                            transition: color 0.2s ease-in-out;
+                        }
+                        h2 {
+                            @include box-reset-default;
+                        }
+                    }
+                }
+            }
+            #prjMenuFooter {
+                @include box-reset-default;
+                //border: $gb-row_5-dsh-org;
+                height: 60px;
+                margin: 30px 30px -30px 50px;
+                overflow: hidden;
+                text-wrap: nowrap;
+                padding-bottom: 15px;
+                position: absolute;
+                bottom: 60px;
+                #followUs {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    color: white;
+                    //font-weight: lighter;
+                    //font-size: 85%;
+                    align-content: end;
+                }
+                h5 {
+                    @include box-reset-default;
+                    //border: $gb-elm_2-dsh-lgr;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: lighter;
+                        text-decoration: underline;
+                    }
+                }
+                a:hover {
+                    color: $sunOrange;
+                    cursor: pointer;
+                    transition: color 0.2s ease-in-out;
+                }
+                #separator:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}

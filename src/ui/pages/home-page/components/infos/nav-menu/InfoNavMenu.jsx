@@ -51,7 +51,7 @@ function InfoNavMenu() {
   return (
     <>
       <div id="navButtonsRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
-        <div id="etapasCol" className="col fade-in-target" style={{ "--delay": `${1 * 300}ms` }} 
+        <div id="etapasCol" className="col fade-in-target" style={{ "--delay": `${1 * 100}ms` }} 
             onMouseEnter={() => handleMouseEnter("phases", IMG.phasesIcon_Color)}
             onMouseLeave={() => handleMouseLeave("phases", IMG.phasesIcon_White)}>
           <a href="#prjPhasesRow">
@@ -66,7 +66,7 @@ function InfoNavMenu() {
             </div>
           </a>
         </div>
-        <div id="comoFuncionaCol" className="col fade-in-target" style={{ "--delay": `${2 * 350}ms` }}  
+        <div id="comoFuncionaCol" className="col fade-in-target" style={{ "--delay": `${2 * 150}ms` }}  
             onMouseEnter={() => handleMouseEnter("panel", IMG.panelIcon_Color)}
             onMouseLeave={() => handleMouseLeave("panel", IMG.panelIcon_White)}>
           <a href="#howItWorksRow">
@@ -81,7 +81,7 @@ function InfoNavMenu() {
             </div>
           </a>
         </div>
-        <div id="nossosProjetosCol" className="col fade-in-target" style={{ "--delay": `${3 * 400}ms` }}  
+        <div id="nossosProjetosCol" className="col fade-in-target" style={{ "--delay": `${3 * 200}ms` }}  
             onMouseEnter={() => handleMouseEnter("projects", IMG.projectsIcon_Color)}
             onMouseLeave={() => handleMouseLeave("projects", IMG.projectsIcon_White)}>
           <a href="#projectNavHeadRow">

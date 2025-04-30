@@ -63,7 +63,7 @@ const projectsData = {
         description: "Instalamos diversos sistemas de geração fotovoltaica na região. A energia sustentável do sol é gerada nos telhados de Gravatá e atendem seus proprietários em suas residências em Recife. São 86 módulos com 44,3 kWp de potência acumulados entre diferentes projetos."
     },
     projetosDiversos: {
-        title: "PROJETOS DA VOLTA ENGENHARIA SUSTENTÁVEL",
+        title: "PROJETOS DA DIVERSOS",
         subtitle: "Projetos diversos realizados através dos anos - Pernambuco",
         year: "2015-",
         images: [IMG.DIV_00, IMG.DIV_01, IMG.DIV_02, IMG.DIV_03, IMG.DIV_04, IMG.DIV_05, IMG.DIV_06, IMG.DIV_07, IMG.DIV_08],

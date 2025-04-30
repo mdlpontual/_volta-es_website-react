@@ -8,6 +8,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 100vh;
+        width: 100%;
         padding: 50px 25px;
         justify-content: center;
         #imgCol {
@@ -16,13 +17,11 @@
             height: 100%;
             width: fit-content;
             align-content: center;
-            overflow: hidden;
             img {
                 @include box-reset-default;
                 //border: $gb-elm_5-dsh-lgr;
+                max-width: 100%;
                 height: 100%;
-                width: auto;
-                object-fit: contain; 
             }
         }
     }
@@ -38,5 +37,34 @@
         opacity: 1 !important;
         transform: translateY(0) !important;
         transition-delay: calc(var(--delay, 0ms));
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #galleryCon {
+        @include box-reset-default;
+        //border: $gb-con_5-sol-red;
+        height: fit-content;
+        #imgRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-ylw;
+            height: fit-content;
+            width: 100%;
+            padding: 50px 25px;
+            justify-content: center;
+            #imgCol {
+                @include box-reset-default;
+                //border: $gb-col_5-sol-blu;
+                height: 100%;
+                width: fit-content;
+                align-content: center;
+                img {
+                    @include box-reset-default;
+                    //border: $gb-elm_5-dsh-lgr;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
     }
 }
