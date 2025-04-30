@@ -3,6 +3,14 @@ import IMG from "../../../../../assets/imagesHub";
 import InfoNavMenu from "./nav-menu/InfoNavMenu";
 
 function Infos() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-in-target');
   
@@ -50,7 +58,7 @@ function Infos() {
         <div id="divider" className="row"></div>
         <div id="prjPhasesRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
           <div id="prjPhasesCol" className="col fade-in-target" style={{ "--delay": `${1 * 500}ms` }}>
-            <img src={IMG.projectPhasesDiagram} alt="Diagrama exemplo das etapas de um projeto" />
+            <img src={isMobile ? IMG.projectPhasesDiagramVertical : IMG.projectPhasesDiagramHorizontal} alt="Diagrama exemplo das etapas de um projeto" />
           </div>
         </div>
         <div id="howItWorksRow" className="row">

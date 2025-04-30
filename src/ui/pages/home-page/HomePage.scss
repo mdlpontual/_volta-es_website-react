@@ -12,13 +12,16 @@ main {
     #navbarRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
-        height: 75px;
+        min-height: 75px;
+        max-height: fit-content;
         width: 100%;
         position: sticky;
         top: 0;
         z-index: 2;
         background-color: $voltaBlue;
         padding: 0px 30px 0px 30px;
+        flex-wrap: nowrap;
+        align-items: center;
         #navbarLogoCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -28,7 +31,7 @@ main {
             img {
                 @include box-reset-default;
                 //border: $gb-elm_2-dsh-lgr;
-                height: 65%;
+                height: 40px;
             }
         }
         #navbarNavCol {
@@ -36,6 +39,7 @@ main {
             //border: $gb-col_5-sol-blu;
             align-content: center;
             height: 100%;
+            margin: 10px 0;
             #navCon {
                 @include box-reset-default;
                 //border: $gb-con_2-dsh-mag;
@@ -73,4 +77,10 @@ footer {
     @include box-reset-default;
     //border: $gb-con_5-dsh-mag;
     height: fit-content;
+}
+
+@media only screen and (max-width: 480px) {
+    #navbarRow {
+        visibility: hidden;
+    }
 }

@@ -34,7 +34,8 @@ const IMG = {
     arrowDownIcon: new URL('./images/icons/arrows/option-03_down.png', import.meta.url).href,
 
     //backgrounds and info images
-    projectPhasesDiagram: new URL('./images/infos/diagrama_Etapas-do-Projeto.png', import.meta.url).href,
+    projectPhasesDiagramHorizontal: new URL('./images/infos/diagrama_Etapas-do-Projeto.png', import.meta.url).href,
+    projectPhasesDiagramVertical: new URL('./images/infos/diagrama_Etapas-do-Projeto-Vertical.png', import.meta.url).href,
     jumbotronBackground: new URL('./images/backgrounds/JUMBO-background.JPG', import.meta.url).href,
     aboutBackground: new URL('./images/backgrounds/ABOUT-background.JPG', import.meta.url).href,
     aboutBox: new URL('./images/backgrounds/ABOUT-box.JPG', import.meta.url).href,

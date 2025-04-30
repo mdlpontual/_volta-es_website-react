@@ -15,12 +15,12 @@ function HomePage() {
         <About />
       </header>
       <main>
-{/*         <InfoNavBar /> */}
+        <InfoNavBar />
         <Infos />
-{/*         <ProjectsNavMenu /> */}
+        <ProjectsNavMenu />
       </main>
       <footer>
-{/*         <Footer /> */}
+        <Footer />
       </footer>
     </>
   );

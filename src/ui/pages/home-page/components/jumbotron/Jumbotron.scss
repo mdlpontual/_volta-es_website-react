@@ -241,3 +241,70 @@
         transition-delay: calc(var(--delay, 0ms));
     }
 }
+
+@media only screen and (max-width: 768px) { 
+    #jumboCon {
+        #jumboRow {
+            #jumboColText {
+                #voltaJumboLogo {
+                    #voltaLogo {
+                        img {
+                            @include box-reset-default;
+                            //border: $gb-elm_2-dsh-lgr;
+                            height: 75px;
+                            margin: 50px;
+                        }
+                    }
+                }
+                #jumboText {
+                    @include box-reset-default;
+                    //border: $gb-row_2-sol-org;
+                    height: 50%;
+                    width: 100%;
+                    align-items: end;
+                    padding: 50px 50px 50px 50px;
+                    #missionTexts {
+                        @include box-reset-default;
+                        //border: $gb-elm_2-dsh-lgr;
+                        border-left: 1px solid white;
+                        border-right: 0px;
+                        padding: 10px 10px 0 10px;
+                        height: fit-content;
+                        text-align: start;
+                        font-weight: 100;
+                        font-size: 1.1rem;
+                        overflow: hidden;
+                        p {
+                            opacity: 1;
+                            transform: translateX(0);
+                            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+                        }
+                        .fade-out {
+                            opacity: 1;
+                            transform: translateX(-100%); // <<< Slide left 20px
+                            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+                        }
+                        .fade-in {
+                            opacity: 1;
+                            transform: translateX(0); // <<< Slide back to original
+                            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #menuOpen {
+        @include box-reset-default;
+        //border: $gb-row_5-sol-org;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        background-color: rgba(25, 25, 25, 0.90);
+        transition: width 0.75s ease-in-out;
+        overflow: hidden;
+        text-align: start;
+    }
+}

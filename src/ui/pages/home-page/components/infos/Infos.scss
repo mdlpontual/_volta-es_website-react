@@ -185,7 +185,6 @@
                         //border: $gb-col_2-sol-blu;
                         height: 100%;
                         min-width: 400px;
-                        //padding: 10px;
                         font-size: 1.25rem;
                         text-align: justify;
                         h4 {
@@ -197,7 +196,6 @@
                         //border: $gb-col_2-sol-blu;
                         height: 100%;
                         min-width: 400px;
-                        //padding: 10px;
                         iframe {
                             width: 100%;
                             height: 400px;
@@ -335,33 +333,9 @@
 
 @media only screen and (max-width: 768px) {
     #infoNavMenuCon {
-        @include box-reset-default;
-        //border: $gb-con_5-sol-red;
-        height: 110vh;
-        position: relative;
-        justify-items: center;
         #infoNavMenuRow {
-            @include box-reset-default;
-            //border: $gb-row_5-sol-ylw;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            z-index: 1;
-            justify-content: center;
             #infoNavMenuCol {
-                @include box-reset-default;
-                //border: $gb-col_5-sol-blu;
-                height: 100%;
-                width: 1380px;
                 #navButtonsRow {
-                    @include box-reset-default;
-                    //border: $gb-row_2-dsh-org;
-                    height: 100%;
-                    width: 100%;
-                    padding: 50px;
-                    gap: 30px;
-                    align-content: center;
-                    align-items: center;
                     #etapasCol,
                     #comoFuncionaCol,
                     #nossosProjetosCol {
@@ -374,10 +348,6 @@
                         background-color: $transGrey;
                         text-align: center;
                         align-content: center;
-                        a {
-                            text-decoration: none;
-                            //color: inherit; 
-                        }
                         #buttonTextRow {
                             @include box-reset-default;
                             //border: $gb-row_2-dsh-ylw;
@@ -428,41 +398,29 @@
 
     }
     #infosCon {
-        @include box-reset-default;
-        //border: $gb-con_5-sol-red;
-        height: 330vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: 100%;
-        position: relative;
-        #divider {
-            @include box-reset-default;
-            //border: $gb-row_5-sol-ylw;
-            height: 75px;
-            background-color: $voltaBlue;
-        }
         #prjPhasesRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
-            height: calc((100% / 3) - 25px);
+            height: fit-content;
             align-items: center;
             text-align: center;
             #prjPhasesCol {
                 @include box-reset-default;
                 //border: $gb-col_5-sol-blu;
-                height: 100%;
+                height: fit-content;
                 align-content: center;
+                padding: 50px;
                 img {
                     @include box-reset-default;
                     //border: $gb-elm_5-sol-lgr;
-                    width: 80%;
+                    width: 75%;
                 }
             }
         }
         #howItWorksRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
-            height: calc((100% / 3) - 25px);
+            height: fit-content;
             align-items: center;
             #howItWorksCol {
                 @include box-reset-default;
@@ -479,32 +437,37 @@
                         @include box-reset-default;
                         //border: $gb-row_2-sol-org;
                         height: 100%;
-                        max-width: 1380px;
-                        padding: 50px;
-                        gap: 30px;
+                        flex-direction: column; 
+                        padding: 50px; 
+                        gap: 20px;
                         flex-wrap: wrap;
                         align-items: center;
                         #howItWorksTextCol {
                             @include box-reset-default;
                             //border: $gb-col_2-sol-blu;
                             height: 100%;
-                            min-width: 400px;
-                            //padding: 10px;
+                            width: 100%;
+                            min-width: 0;
                             font-size: 1.25rem;
                             text-align: justify;
                             h4 {
                                 text-align: start !important;
+                                font-size: 1rem;
+                            }
+                            p {
+                                font-size: 0.9rem;
                             }
                         }
                         #howItWorksVideoCol {
                             @include box-reset-default;
                             //border: $gb-col_2-sol-blu;
                             height: 100%;
-                            min-width: 400px;
-                            //padding: 10px;
+                            width: 100%;
+                            min-width: 0;
                             iframe {
+                                aspect-ratio: 16 / 9;
                                 width: 100%;
-                                height: 400px;
+                                max-width: 100%;
                             }
                         }
                     }
@@ -514,8 +477,8 @@
         #letsTalkRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
-            height: calc((100% / 3) - 25px);
-            padding: 0 25px 100px 25px;
+            height: fit-content;
+            padding: 15px;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -524,20 +487,27 @@
                 //border: $gb-col_5-sol-blu;
                 height: 100%;
                 max-width: 1380px;
-                align-content: center;
                 position: relative;
                 justify-items: center;
+                margin-top: 75px;
                 #letsTalkTextRow {
                     @include box-reset-default;
                     //border: $gb-row_2-sol-org;
-                    height: fit-content;
+                    height: 100%;
                     width: 100%;
                     border-radius: 50px;
-                    padding: 50px;
+                    padding: 15px;
                     background-color: $transGrey;
                     #letsTalkTextCol {
                         @include box-reset-default;
                         //border: $gb-col_2-sol-cyn;
+                        padding: 15px 0;
+                        h4 {
+                            @include box-reset-default;
+                            //border: $gb-col_2-sol-cyn;
+                            font-size: 1rem;
+                            padding: 0 25px;
+                        }
                         .row {
                             @include box-reset-default;
                             //border: $gb-row_2-dsh-ylw;
@@ -545,41 +515,22 @@
                             #zap {
                                 @include box-reset-default;
                                 //border: $gb-col_2-dsh-cyn;
-                                padding: 0 15px;
+                                padding: 15px 0 0 0;
                                 font-weight: 100;
-                                font-size: 1.2rem;
+                                font-size: 1rem;
                             }
                             #mail {
                                 @include box-reset-default;
                                 //border: $gb-col_2-dsh-cyn;
-                                padding: 0 15px;
+                                padding: 15px 0;
                                 font-weight: 100;
+                                font-size: 1rem;
                             }
                         }
                     }
                 }
                 #checkOurProjectsRow {
-                    @include box-reset-default;
-                    //border: $gb-row_2-sol-org;
-                    height: 150px;
-                    width: 100%;
-                    position: absolute;
-                    bottom: 0;
-                    justify-content: center;
-                    #arrowDownCol {
-                        @include box-reset-default;
-                        // border: $gb-col_2-sol-cyn;
-                        border-radius: 50%;
-                        height: 75px;
-                        padding: 10px;
-                        img {
-                            height: 100%;
-                        }
-                    }
-                    #arrowDownCol:hover {
-                        background-color: $voltaBlue;
-                        transition: background-color 0.1s ease-in;
-                    }
+                    visibility: hidden;
                 }
             }
         }
