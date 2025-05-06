@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
+import aboutBackground from "../../../../../assets/images/backgrounds/about-background.jpg"
 
 function About() {
-  console.log("aboutBox image:", IMG.aboutBox);
-
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-in-target');
   
@@ -42,7 +41,7 @@ function About() {
           </div>
         </div>
       </section>
-      <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
+      <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${aboutBackground})`}}>
         <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
           <div id="aboutCol" className="col">
