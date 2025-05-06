@@ -124,7 +124,6 @@ const IMG = {
     DIV_06: new URL('./images/projects/Outros Projetos/DIV_06.jpg', import.meta.url).href,
     DIV_07: new URL('./images/projects/Outros Projetos/DIV_07.jpg', import.meta.url).href,
     DIV_08: new URL('./images/projects/Outros Projetos/DIV_08.jpg', import.meta.url).href,
-
 }
 
 export default IMG; 
