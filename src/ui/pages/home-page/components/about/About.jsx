@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import IMG from "../../../../../assets/imagesHub";
 
 function About() {
+  console.log("aboutBox image:", IMG.aboutBox);
+
   useEffect(() => {
     const elements = document.querySelectorAll('.fade-in-target');
   
