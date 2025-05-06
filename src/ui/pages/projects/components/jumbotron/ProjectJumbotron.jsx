@@ -62,7 +62,7 @@ function ProjectJumbotron({ data, slug }) {
               </div>
               <div id="prjMenuIconRow" className="row">
                 <div id="prjMenuIcon" className="col-auto">
-                  <img className="col-auto btn" 
+                  <img className="col-auto" 
                       src={symbolSrc}
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}

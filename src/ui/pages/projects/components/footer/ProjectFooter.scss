@@ -10,6 +10,8 @@
         height: 40vh;
         align-content: end;
         justify-content: center;
+        gap: 100px;
+        row-gap: 0;
         #homeNavCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;

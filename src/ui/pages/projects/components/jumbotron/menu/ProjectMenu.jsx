@@ -34,7 +34,7 @@ function ProjectMenu({ setIsMenuOpen, slug }) {
             <menu id="prjMenuCol" className="col" ref={menuRef}>
               <div id="prjMenuIconRow" className="row">
                 <div id="prjMenuIcon" className="col-auto">
-                  <img className="col-auto btn" 
+                  <img className="col-auto" 
                         src={IMG.menuIconOrange} 
                         onClick={() => setIsMenuOpen(false)}
                         alt="ícone Menu"/>
