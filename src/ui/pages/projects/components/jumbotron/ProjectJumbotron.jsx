@@ -9,17 +9,17 @@ function ProjectJumbotron({ data, slug }) {
   const handleMouseEnter = () => {
       setTimeout(() => {
           setSymbolSrc(IMG.menuIconOrange);
-      }, 100); // Slight delay for smooth transition
+      }, 100); 
   };
 
   const handleMouseLeave = () => {
       setTimeout(() => {
           setSymbolSrc(IMG.menuIconWhite);
-      }, 100); // Slight delay for smooth transition
+      }, 100); 
   };
 
   useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); // select both classes
+    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); 
   
     elements.forEach((el, index) => {
       el.dataset.index = index;

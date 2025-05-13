@@ -12,7 +12,7 @@ function InfoNavMenu() {
     const elements = document.querySelectorAll('.fade-in-target');
   
     elements.forEach((el, index) => {
-      el.dataset.index = index; // <- set the index in a data attribute
+      el.dataset.index = index;
     });
   
     const observer = new IntersectionObserver(
@@ -50,7 +50,7 @@ function InfoNavMenu() {
 
   return (
     <>
-      <div id="navButtonsRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
+      <nav id="navButtonsRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
         <div id="etapasCol" className="col fade-in-target" style={{ "--delay": `${1 * 100}ms` }} 
             onMouseEnter={() => handleMouseEnter("phases", IMG.phasesIcon_Color)}
             onMouseLeave={() => handleMouseLeave("phases", IMG.phasesIcon_White)}>
@@ -77,7 +77,7 @@ function InfoNavMenu() {
               <img id="comoFuncionaIcon"
                     className="col-auto"
                     src={iconSrc.panel}
-                    alt="icone das etapas do projeto" />
+                    alt="icone painel solar" />
             </div>
           </a>
         </div>
@@ -92,11 +92,11 @@ function InfoNavMenu() {
               <img id="nossosProjetosIcon"
                   className="col-auto"
                   src={iconSrc.projects}
-                  alt="icone das etapas do projeto" />
+                  alt="icone da galeria de projetos" />
             </div>
           </a>
         </div>
-      </div>
+      </nav>
     </>
   );
 };

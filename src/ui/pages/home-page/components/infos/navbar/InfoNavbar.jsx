@@ -4,7 +4,7 @@ import IMG from "../../../../../../assets/imagesHub";
 function InfoNavbar() {
   return (
     <>
-      <div id="navbarRow" className="row">
+      <section id="navbarRow" className="row">
         <div id="navbarLogoCol" className="col-2">
           <a href="#jumboCon">
             <img src={IMG.voltaLogo_White} alt="logo volta - barra de navegação" />
@@ -20,7 +20,7 @@ function InfoNavbar() {
             </ul>
           </nav>
         </div>
-      </div>
+      </section>
     </>
   );
 };

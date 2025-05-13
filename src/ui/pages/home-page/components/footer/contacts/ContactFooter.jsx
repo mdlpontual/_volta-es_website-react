@@ -8,7 +8,7 @@ function ContactFooter() {
         <div id="contactCol" className="col">
           <div id="footerLogoRow" className="row">
             <div id="footerLogoCol" className="col-auto">
-              <img  src={IMG.voltaEsLogo_White} alt="Volta Logo" />
+              <img  src={IMG.voltaEsLogo_White} alt="Logo Volta" />
             </div>
           </div>
           <div id="contactsMainRow" className="row">
@@ -25,14 +25,14 @@ function ContactFooter() {
             </div>
             <div id="profileContactCol" className="col-auto">
               <p>
-                  <strong>Paulo Fernando Pontual</strong>
-                  <br />
-                  Engenheiro - Diretor
-                  <br />
-                  (81) 9.8290.9626
-                  <br />
-                  ppontual@voltaes.com.br
-                </p>
+                <strong>Paulo Fernando Pontual</strong>
+                <br />
+                Engenheiro - Diretor
+                <br />
+                (81) 9.8290.9626
+                <br />
+                ppontual@voltaes.com.br
+              </p>
             </div>
           </div>
           <div id="signaturesRow" className="row">

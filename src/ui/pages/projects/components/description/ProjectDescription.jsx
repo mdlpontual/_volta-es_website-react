@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import IMG from "../../../../../assets/imagesHub";
 
 function ProjectDescription({ data }) {
 
   useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); // select both classes
+    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); 
   
     elements.forEach((el, index) => {
       el.dataset.index = index;
@@ -38,7 +37,7 @@ function ProjectDescription({ data }) {
   return (
     <>
       <section id="prjTextCon" className="container-fluid">
-        <div id="projTextRow" className="row">
+        <article id="projTextRow" className="row">
           <div id="projTextCol" className="col fade-in-target" style={{ "--delay": `${0 * 500}ms` }}>
             <div id="projProfileRow" className="row">
               <div id="projProfileCol" className="col-auto">
@@ -51,7 +50,7 @@ function ProjectDescription({ data }) {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </section>
     </>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import IMG from "../../../assets/imagesHub";
 import Jumbotron from "./components/jumbotron/Jumbotron"
 import About from "./components/about/About"
 import Infos from "./components/infos/Infos"

@@ -31,13 +31,13 @@ function Menu({ setIsMenuOpen }) {
 
     return (
         <>
-            <menu id="menuCol" className="col" ref={menuRef}>
+            <section id="menuCol" className="col" ref={menuRef}>
               <div id="menuIconRow" className="row">
                 <div id="menuIcon" className="col-auto">
                   <img className="col-auto" 
                         src={IMG.menuIconOrange} 
                         onClick={() => setIsMenuOpen(false)}
-                        alt="ícone Menu"/>
+                        alt="ícone Menu Aberto"/>
                 </div>
               </div>
               <nav id="menuNav" className="row">
@@ -64,7 +64,7 @@ function Menu({ setIsMenuOpen }) {
                 <address id="menuFooter" className="row">
                     <h5 id="followUs">| Siga a Volta no <a href="https://www.instagram.com/volta_es/" onClick={() => setIsMenuOpen(false)}>Instagram </a></h5>
                 </address>
-            </menu>
+            </section>
         </>
     );
 }

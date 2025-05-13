@@ -31,7 +31,7 @@ function ProjectMenu({ setIsMenuOpen, slug }) {
 
     return (
         <>
-            <menu id="prjMenuCol" className="col" ref={menuRef}>
+            <section id="prjMenuCol" className="col" ref={menuRef}>
               <div id="prjMenuIconRow" className="row">
                 <div id="prjMenuIcon" className="col-auto">
                   <img className="col-auto" 
@@ -61,7 +61,7 @@ function ProjectMenu({ setIsMenuOpen, slug }) {
                 <address id="prjMenuFooter" className="row">
                     <h5 id="followUs">| Siga a Volta no <a href="https://www.instagram.com/volta_es/" onClick={() => setIsMenuOpen(false)}>Instagram </a></h5>
                 </address>
-            </menu>
+            </section>
         </>
     );
 }

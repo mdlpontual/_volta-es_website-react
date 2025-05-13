@@ -7,7 +7,7 @@ function Footer() {
     const elements = document.querySelectorAll('.fade-in-target');
   
     elements.forEach((el, index) => {
-      el.dataset.index = index; // <- set the index in a data attribute
+      el.dataset.index = index; 
     });
   
     const observer = new IntersectionObserver(

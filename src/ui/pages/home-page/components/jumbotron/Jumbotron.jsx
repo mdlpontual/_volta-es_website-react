@@ -18,17 +18,17 @@ function Jumbotron() {
   const handleMouseEnter = () => {
       setTimeout(() => {
           setSymbolSrc(IMG.menuIconOrange);
-      }, 100); // Slight delay for smooth transition
+      }, 100);
   };
 
   const handleMouseLeave = () => {
       setTimeout(() => {
           setSymbolSrc(IMG.menuIconWhite);
-      }, 100); // Slight delay for smooth transition
+      }, 100);
   };
 
   useEffect(() => {
-    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target'); // select both classes
+    const elements = document.querySelectorAll('.fade-in-target, .fade-out-target');
   
     elements.forEach((el, index) => {
       el.dataset.index = index;
@@ -74,7 +74,7 @@ function Jumbotron() {
     }, 15000); // Every 15 seconds
   
     return () => clearInterval(interval);
-  }, [currentIndex]); // IMPORTANT: watch currentIndex  
+  }, [currentIndex]);
 
   return (
     <>
@@ -91,22 +91,22 @@ function Jumbotron() {
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
                      onClick={() => setIsMenuOpen(true)}
-                     alt="ícone Menu"/>
+                     alt="ícone Menu Fechado"/>
               </div>
             </div>
           </div>
           <div id="jumboColText" className="col">
             <div id="voltaJumboLogo" className="row fade-in-target" style={{ "--delay": `${1 * 500}ms` }}>
               <div id="voltaLogo" className="col-auto">
-                <img src={IMG.voltaEsLogo_White} alt="Logo Volta-ES" />
+                <img src={IMG.voltaEsLogo_White} alt="Logo Volta" />
               </div>
             </div>
             <div id="jumboText" className="row fade-in-target" style={{ "--delay": `${2 * 500}ms` }}>
-              <div id="missionTexts" className="col-auto">
+              <article id="missionTexts" className="col-auto">
                 <p className={isFading ? "fade-out" : "fade-in"}>
                   {currentTxt}
                 </p>
-              </div>
+              </article>
             </div>
             <div id="voltaJumboLogo" className="row"></div>
         </div>

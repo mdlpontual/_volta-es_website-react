@@ -6,7 +6,7 @@ function About() {
     const elements = document.querySelectorAll('.fade-in-target');
   
     elements.forEach((el, index) => {
-      el.dataset.index = index; // <- set the index in a data attribute
+      el.dataset.index = index; 
     });
   
     const observer = new IntersectionObserver(
@@ -36,15 +36,15 @@ function About() {
       <section id="logoCon" className="container-fluid">
         <div id="logoRow" className="row">
           <div id="logoCol" className="col fade-in-target" style={{ "--delay": `${0 * 75}ms` }}>
-            <img src={IMG.voltaEsLogo_Blue} alt="Volta Logo - azul com fundo branco" />
+            <img src={IMG.voltaEsLogo_Blue} alt="Logo Volta - azul com fundo branco" />
           </div>
         </div>
       </section>
-      <article id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
+      <section id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
         <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
           <div id="aboutCol" className="col">
-            <div id="voltaText" className="row">
+            <article id="voltaText" className="row">
               <div id="voltaTextBox" className="col-md-8 col-sm-12 fade-in-target" style={{ "--delay": `${1 * 50}ms` }}>
                 <p>
                   A Volta Engenharia oferece a seus clientes a oportunidade de gerar sua própria energia.
@@ -56,7 +56,7 @@ function About() {
                 </p>
               </div>
               <div id="voltaImgBox" className="col fade-in-target" style={{backgroundImage: `url(${IMG.aboutBox})`, "--delay": `${2 * 100}ms`}}></div>
-            </div>
+            </article>
             <div id="voltaVideo" className="row">
               <div id="voltaLogoBox" className="col fade-in-target" style={{ "--delay": `${3 * 50}ms` }}>
                 <img src={IMG.voltaEsLogo_White} className="row" lt="Volta Logo - branco com fundo azul" />
@@ -74,7 +74,7 @@ function About() {
         </div>
         <div id="sustRow" className="row">
           <div id="sustCol" className="col">
-            <div id="sustTextRow" className="row fade-in-target" style={{ "--delay": `${5 * 50}ms` }}>
+            <article id="sustTextRow" className="row fade-in-target" style={{ "--delay": `${5 * 50}ms` }}>
               <div id="sustTextCol" className="col">
                 <div id="topTextRow" className="row">
                   <p>
@@ -109,10 +109,10 @@ function About() {
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
-      </article>
+      </section>
     </>
   );
 };
