@@ -42,6 +42,11 @@ function ContactFooter() {
               Website by <a href="https://github.com/mdlpontual">mdlpontual</a>
             </p>
           </div>
+          <div id="verRow" className="row">
+            <p>
+              v0.1.0
+            </p>
+          </div>
         </div>
       </address>
     </>

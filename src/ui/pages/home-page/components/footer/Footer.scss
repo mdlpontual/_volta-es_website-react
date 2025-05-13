@@ -163,7 +163,7 @@
         #signaturesRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-org;
-            height: 15%;
+            height: 12%;
             width: 100%;
             text-align: center;
             p {
@@ -176,6 +176,20 @@
                     text-decoration: none;
                     color: inherit;
                 }
+            }
+        }
+        #verRow {
+            @include box-reset-default;
+            //border: $gb-row_5-sol-org;
+            height: fit-content;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 10px;
+            p {
+                @include box-reset-default;
+                //border: $gb-elm_2-dsh-lgr;
+                font-weight: 100;
+                font-size: 0.75rem;
             }
         }
     }
