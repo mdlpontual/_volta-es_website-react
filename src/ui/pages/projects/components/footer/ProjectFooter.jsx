@@ -12,7 +12,7 @@ function ProjectFooter() {
             <a href="#projPageHeader"><h4>Voltar ao topo</h4></a>
           </div>
           <div id="homeNavCol" className="col-auto">
-            <Link to="/"><h4>Voltar a Página Inicial</h4></Link>
+            <Link to="/"><h4>Retornar à Página Inicial</h4></Link>
           </div>
         </div>
         <ContactFooter />
