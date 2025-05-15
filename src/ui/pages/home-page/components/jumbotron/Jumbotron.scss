@@ -8,6 +8,18 @@
     background-repeat: no-repeat;
     background-position-y: 100%;
     position: relative;
+    #jumboBackgroundImage {
+        @include box-reset-default;
+        //border: $gb-col_5-sol-blu;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
     #jumboRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;

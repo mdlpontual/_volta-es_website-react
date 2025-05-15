@@ -40,7 +40,8 @@ function About() {
           </div>
         </div>
       </section>
-      <section id="aboutCon" className="container-fluid" style={{backgroundImage: `url(${IMG.aboutBackground})`}}>
+      <section id="aboutCon" className="container-fluid">
+        <img id="aboutBackgroundImage" src={IMG.aboutBackground} alt="background" loading="lazy"/>
         <div id="gapRow" className="row"></div>
         <div id="aboutRow" className="row">
           <div id="aboutCol" className="col">

@@ -78,7 +78,8 @@ function Jumbotron() {
 
   return (
     <>
-      <section id="jumboCon" className="container-fluid" style={{backgroundImage: `url(${IMG.jumbotronBackground})`}}>
+      <section id="jumboCon" className="container-fluid">
+        <img id="jumboBackgroundImage" src={IMG.jumbotronBackground} alt="background" loading="lazy"/>
         <div id="jumboRow" className="row"><div id="jumboFilter" className="fade-out-target"></div>
           <div id="jumboColMenu" className="col">
             <div id={isMenuOpen ? "menuOpen" : "menuClosed"} className="row">

@@ -49,12 +49,13 @@ function Infos() {
         </div>
         <div id="backgroundRow" className="row d-flex">
           <img id="houseCartoon" className="col-5" 
-              src={IMG.cartoonLeftBackground} alt="background - ilustração de casa com painel solar" />
+              src={IMG.cartoonLeftBackground} alt="background - ilustração de casa com painel solar" loading="lazy"/>
           <img id="panelsCartoon" className="col-5" 
-              src={IMG.cartoonRightBackground} alt="background - ilustração de trabalhadores e infra-estrutura elétrica" />
+              src={IMG.cartoonRightBackground} alt="background - ilustração de trabalhadores e infra-estrutura elétrica" loading="lazy"/>
         </div>
       </section>
-      <section id="infosCon" className="container-fluid" style={{backgroundImage: `url(${IMG.infosBackground})`}}>
+      <section id="infosCon" className="container-fluid">
+        <img id="infosBackgroundImage" src={IMG.infosBackground} alt="background" loading="lazy"/>
         <div id="divider" className="row"></div>
         <div id="prjPhasesRow" className="row fade-in-target" style={{ "--delay": `${0 * 50}ms` }}>
           <div id="prjPhasesCol" className="col fade-in-target" style={{ "--delay": `${1 * 500}ms` }}>
