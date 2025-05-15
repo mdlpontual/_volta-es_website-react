@@ -52,7 +52,8 @@ function ProjectJumbotron({ data, slug }) {
 
   return (
     <>
-      <section id="prjJumboCon" className="container-fluid" style={{backgroundImage: `url(${data.images[0]})`}}>
+      <section id="prjJumboCon" className="container-fluid" /* style={{backgroundImage: `url(${data.images[0]})`}} */>
+        <img id="backgroundImage" src={data.images[0]} alt="background" loading="lazy"/>
         <div id="preImageFilter" className="fade-out-target"></div>
         <div id="imageFilter">
           <div id="prjJumboRow" className="row">

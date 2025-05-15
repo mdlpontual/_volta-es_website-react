@@ -7,7 +7,7 @@ function ProjectCard({ title, cover, slug }) {
       <Link to={`/${slug}`}>
         <div id="hoverBox">
           <div id="projectCardRow" className="row">
-            <img src={cover} alt={`imagem de fundo do projeto ${title}`} />
+            <img src={cover} alt={`imagem de fundo do projeto ${title}`} loading="lazy" />
             <h3>{title}</h3>
             <div id="titleBox"></div>
           </div>

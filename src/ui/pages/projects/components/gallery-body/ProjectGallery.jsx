@@ -41,7 +41,7 @@ function ProjectGallery({ data }) {
                 {imagesArr.map((img, i) => (
                     <div key={i} id="imgRow" className="row fade-in-target" style={{ "--delay": `${1 * 300}ms` }}>
                         <div id="imgCol" className="col-auto">
-                            <img src={img} alt={`Imagem do projeto: ${data.title}`}/>
+                            <img src={img} alt={`Imagem do projeto: ${data.title}`} loading="lazy" />
                         </div>
                     </div>
                 ))}
