@@ -234,18 +234,18 @@
 #jumboCon {
     .fade-out-target {
         opacity: 1;
-        transition: opacity 1.5s ease-out;
+        transition: opacity 2.5s ease-out;
     }
     
     .fade-out-filter {
         opacity: 0 !important;
-        transition: opacity 3s ease-out 1s;
+        transition: opacity 5s ease-out 3s;
     }
     
     .fade-in-target {
         opacity: 0;
         transform: translateX(-75px);
-        transition: opacity 1.25s ease-out, transform 1.25s ease-out;
+        transition: opacity 3.25s ease-out, transform 3.25s ease-out;
     }
     
     .fade-in-up {
