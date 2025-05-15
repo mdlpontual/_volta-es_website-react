@@ -89,45 +89,45 @@
 
 #contactRow {
     @include box-reset-default;
-    //border: $gb-row_5-sol-ylw;
+    border: $gb-row_5-sol-ylw;
     height: 60vh;
     height: 60svh;
     background-color: $voltaBlue;
     justify-content: center;
     #contactCol {
         @include box-reset-default;
-        //border: $gb-col_5-sol-blu;
+        border: $gb-col_5-sol-blu;
         justify-items: center;
         max-width: 1380px;
         height: 100%;
         padding: 50px 50px 25px 50px;
         #footerLogoRow {
             @include box-reset-default;
-            //border: $gb-row_5-sol-org;
+            border: $gb-row_5-sol-org;
             height: 25%;
             width: 100%;
             justify-content: center;
             #footerLogoCol {
                 @include box-reset-default;
-                //border: $gb-col_5-sol-cyn;
+                border: $gb-col_5-sol-cyn;
                 height: 100%;
                 padding: 25px 25px 25px 25px;
                 img {
                     @include box-reset-default;
-                    //border: $gb-elm_2-dsh-lgr;
+                    border: $gb-elm_2-dsh-lgr;
                     height: 100px;
                 }
             }
         }
         #contactsMainRow {
             @include box-reset-default;
-            //border: $gb-row_5-sol-org;
+            border: $gb-row_5-sol-org;
             height: 60%;
             width: 100%;
             align-content: center;
             #adressCol {
                 @include box-reset-default;
-                //border: $gb-col_5-sol-cyn;
+                border: $gb-col_5-sol-cyn;
                 height: 70%;
                 width: 50%;
                 border-right: 1px solid white;
@@ -137,7 +137,7 @@
                 justify-items: end;
                 p {
                     @include box-reset-default;
-                    //border: $gb-elm_2-dsh-lgr;
+                    border: $gb-elm_2-dsh-lgr;
                     width: fit-content;
                     strong {
                         font-size: 1.2rem;
@@ -146,7 +146,7 @@
             }
             #profileContactCol {
                 @include box-reset-default;
-                //border: $gb-col_5-sol-cyn;
+                border: $gb-col_5-sol-cyn;
                 height: 70%;
                 width: 50%;
                 border-left: 1px solid white;
@@ -155,7 +155,7 @@
                 padding: 10px 10px 10px 25px;
                 p {
                     @include box-reset-default;
-                    //border: $gb-elm_2-dsh-lgr;
+                    border: $gb-elm_2-dsh-lgr;
                     width: fit-content;
                     strong {
                         font-size: 1.2rem;
@@ -165,17 +165,17 @@
         }
         #signaturesRow {
             @include box-reset-default;
-            //border: $gb-row_5-sol-org;
+            border: $gb-row_5-sol-org;
             height: 12%;
             width: 100%;
             text-align: center;
             p {
                 @include box-reset-default;
-                //border: $gb-elm_2-dsh-lgr;
+                border: $gb-elm_2-dsh-lgr;
                 font-weight: 100;
                 a {
                     @include box-reset-default;
-                    //border: $gb-elm_2-dsh-lgr;
+                    border: $gb-elm_2-dsh-lgr;
                     text-decoration: none;
                     color: inherit;
                 }
@@ -183,14 +183,14 @@
         }
         #verRow {
             @include box-reset-default;
-            //border: $gb-row_5-sol-org;
+            border: $gb-row_5-sol-org;
             height: fit-content;
             width: 100%;
             text-align: center;
             padding-bottom: 10px;
             p {
                 @include box-reset-default;
-                //border: $gb-elm_2-dsh-lgr;
+                border: $gb-elm_2-dsh-lgr;
                 font-weight: 100;
                 font-size: 0.85rem;
             }
