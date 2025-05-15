@@ -8,7 +8,7 @@ function ContactFooter() {
         <div id="contactCol" className="col">
           <div id="footerLogoRow" className="row">
             <div id="footerLogoCol" className="col-auto">
-              <img  src={IMG.voltaEsLogo_White} alt="Logo Volta" />
+              <img  src={IMG.voltaEsLogo_White} alt="Logo Volta" loading="lazy"/>
             </div>
           </div>
           <div id="contactsMainRow" className="row">
