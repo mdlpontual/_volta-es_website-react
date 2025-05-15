@@ -7,11 +7,11 @@ function ProjectFooter() {
     <>
       <section id="ppFooterCon" className="container-fluid">
         <nav id="bottomNavRow" className="row">
-          <div id="homeNavCol" className="col-auto">
+          <div id="topNavCol" className="col">
             <a href="#projPageHeader"><h4>Voltar ao topo</h4></a>
           </div>
-          <div id="homeNavCol" className="col-auto">
-            <Link to="/"><h4>Retornar à Página Inicial</h4></Link>
+          <div id="homeNavCol" className="col">
+            <Link to="/"><h4>Página Inicial</h4></Link>
           </div>
         </nav>
         <ContactFooter />

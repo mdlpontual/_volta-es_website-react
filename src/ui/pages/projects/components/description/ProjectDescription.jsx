@@ -40,11 +40,15 @@ function ProjectDescription({ data }) {
         <article id="projTextRow" className="row">
           <div id="projTextCol" className="col fade-in-target" style={{ "--delay": `${0 * 500}ms` }}>
             <div id="projProfileRow" className="row">
-              <div id="projProfileCol" className="col-auto">
-                <h4><strong>Ano: </strong>{data.year}</h4>
-                <h4><strong>Módulos: </strong>{data.modules}</h4>
-                <h4><strong>Potência Gerada: </strong>{data.powerOutput}</h4>
-              </div>
+              {(data.year && data.modules && data.powerOutput) && (
+                <>
+                  <div id="projProfileCol" className="col-auto">
+                    <h4><strong>Ano: </strong>{data.year}</h4>
+                    <h4><strong>Módulos: </strong>{data.modules}</h4>
+                    <h4><strong>Potência Gerada: </strong>{data.powerOutput}</h4>
+                  </div>
+                </>
+              )}
               <div id="projDescCol" className="col">
                 <h4>{data.description}</h4>  
               </div>

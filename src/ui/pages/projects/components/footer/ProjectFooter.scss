@@ -10,13 +10,24 @@
         height: 40vh;
         align-content: end;
         justify-content: center;
-        gap: 100px;
         row-gap: 0;
+        #topNavCol {
+            @include box-reset-default;
+            //border: $gb-col_5-sol-blu;
+            border-right: 2px solid black;
+            height: fit-content;
+            padding: 25px 10px;
+            text-align: end;
+            a {
+                text-decoration: none;
+                color: black; 
+            }
+        }   
         #homeNavCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
             height: fit-content;
-            padding-bottom: 25px;
+            padding: 25px 10px;
             a {
                 text-decoration: none;
                 color: black; 

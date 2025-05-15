@@ -68,7 +68,7 @@ const projectsData = {
         year: "2015-",
         images: [IMG.DIV_00, IMG.DIV_01, IMG.DIV_02, IMG.DIV_03, IMG.DIV_04, IMG.DIV_05, IMG.DIV_06, IMG.DIV_07, IMG.DIV_08],
         menuPage: "prjGvt",
-        description: "Por todo o estado de Peernambuco, passando por litoral, região metropolitana e até mesmo no agreste, encontramos painéis fotovoltaicos instalados pela Volta. Desde o primeiríssimo em 2015 até o momento e estes números estão aumentando."
+        description: "Por todo o estado de Pernambuco, passando por litoral, região metropolitana e até mesmo no agreste, encontramos painéis fotovoltaicos instalados pela Volta. Desde o primeiríssimo em 2015 até o momento e estes números estão aumentando."
     },
 };
 
