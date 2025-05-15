@@ -412,9 +412,6 @@
 
     }
     #infosCon {
-        #divider {
-            height: 10px;
-        }
         #prjPhasesRow {
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
