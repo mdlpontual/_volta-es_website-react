@@ -4,6 +4,7 @@
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
     height: 110vh;
+    height: 110svh;
     #logoRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
@@ -25,6 +26,7 @@
     @include box-reset-default;
     //border: $gb-con_5-sol-red;
     height: 220vh;
+    height: 220svh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -178,6 +180,7 @@
         height: fit-content;
         #aboutRow {
             height: 100vh;
+            height: 100svh;
             #aboutCol {
                 height: 100%;
                 align-content: center;
