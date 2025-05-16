@@ -4,7 +4,7 @@ import Menu from "./menu/Menu";
 
 const missionText01 = "A VOLTA Engenharia Sustentável foi criada com a missão de fornecer soluções de engenharia para clientes que desejam alcançar um uso mais eficiente de energia, atenuando o impacto de suas atividades no meio ambiente de forma sustentável e econômica.";
 const missionText02 = "Oferecemos aos nossos clientes a oportunidade de gerar sua própria energia. O nosso atendimento é individual e personalizado, pois queremos oferecer soluções de engenharia exclusivas ao nosso cliente de acordo com suas necessidades específicas.";
-const missionText03 = "Ser sustentável é preservar os recursos que temos hoje, garantindo sua disponibilidade as gerações futuras. Cabe a nós a responsabilidade de entregar um mundo saudável e rico em recursos naturais para nos filhos, netos e os filhos de nossos netos.";
+const missionText03 = "Ser sustentável é preservar os recursos que temos hoje, garantindo sua disponibilidade às gerações futuras. Cabe a nós a responsabilidade de entregar um mundo saudável e rico em recursos naturais para nossos filhos, netos e os filhos de nossos netos.";
 
 const textArr = [missionText01, missionText02, missionText03];
 

@@ -10,7 +10,7 @@ const projectsData = {
         powerOutput: "530 kWp",
         images: [IMG.IND_CA_01, IMG.IND_CA_02, IMG.IND_CA_03, IMG.IND_CA_04, IMG.IND_CA_05, IMG.IND_CA_06, IMG.IND_CA_07],
         menuPage: "indCam",
-        description: "Este é o maior projeto realizado pela Volta Engenharia até o presente momento. Gera energia sustentável para uma grande indústria da nossa região metropolitana, com 1.027 módulos fotovoltaicos, 530 kWp de potência e seis grandes inversores de última geração de Fabricação Austríaca que começaram a operar em meados de 2024."
+        description: "Este é o maior projeto realizado pela Volta Engenharia até o presente momento. Gera energia sustentável para uma grande indústria da nossa região metropolitana, com 1.027 módulos fotovoltaicos, 530 kWp de potência e seis grandes inversores de última geração de fabricação Austríaca que começaram a operar em meados de 2024."
     },
     sitioTanque: {
         title: "PROJETO ACENDE",
@@ -60,7 +60,7 @@ const projectsData = {
         powerOutput: "44,3 kWp",
         images: [IMG.GVT_00, IMG.GVT_01, IMG.GVT_02, IMG.GVT_03, IMG.GVT_04, IMG.GVT_05, IMG.GVT_06, IMG.GVT_07, IMG.GVT_08, IMG.GVT_09, IMG.GVT_10],
         menuPage: "prjGvt",
-        description: "Instalamos diversos sistemas de geração fotovoltaica na região. A energia sustentável do sol é gerada nos telhados de Gravatá e atendem seus proprietários em suas residências em Recife. São 86 módulos com 44,3 kWp de potência acumulados entre diferentes projetos."
+        description: "Instalamos diversos sistemas de geração fotovoltaica na região. A energia sustentável do sol é gerada nos telhados de Gravatá e atende seus proprietários em suas residências em Recife. São 86 módulos com 44,3 kWp de potência acumulados entre diferentes projetos."
     },
     projetosDiversos: {
         title: "PROJETOS DIVERSOS",
@@ -68,7 +68,7 @@ const projectsData = {
         year: "2015-",
         images: [IMG.DIV_00, IMG.DIV_01, IMG.DIV_02, IMG.DIV_03, IMG.DIV_04, IMG.DIV_05, IMG.DIV_06, IMG.DIV_07, IMG.DIV_08],
         menuPage: "prjGvt",
-        description: "Por todo o estado de Pernambuco, passando por litoral, região metropolitana e até mesmo no agreste, encontramos painéis fotovoltaicos instalados pela Volta. Desde o primeiríssimo em 2015 até o momento e estes números estão aumentando."
+        description: "Por todo o estado de Pernambuco, passando por litoral, região metropolitana e até mesmo no agreste, encontramos painéis fotovoltaicos instalados pela Volta. Desde o primeiríssimo em 2015 até o momento, e estes números estão aumentando."
     },
 };
 

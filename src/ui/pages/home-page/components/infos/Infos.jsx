@@ -70,13 +70,13 @@ function Infos() {
                     <h4><strong id="tallCase">COMO FUNCIONA UM GERADOR FOTOVOLTAICO?</strong></h4>
                     <p>
                     O tipo de gerador solar mais difundido é o gerador fotovoltaico. 
-                    O termo fotovoltaico se aplica aos materiais que tem a capacidade de criar uma tensão elétrica 
+                    O termo fotovoltaico se aplica aos materiais que têm a capacidade de criar uma tensão elétrica 
                     ao ser exposto a luz.
                     Um gerador solar fotovoltaico é um equipamento simples, composto de módulos fotovoltaicos e um inversor. 
                     Os módulos geram uma corrente elétrica ao receber a luz do sol. O inversor recebe esta corrente elétrica 
-                    e transformando-a para ser usada em nossa casa, com características iguais a 
+                    e a transforma para ser usada em nossa casa, com características iguais a 
                     corrente elétrica da rede pública. Durante o dia, a energia consumida pela sua casa será gerada pelo 
-                    gerador fotovoltaico, e ao final da tarde,sua casa volta a receber energia elétrica da rede pública!
+                    gerador fotovoltaico, e ao final da tarde, sua casa volta a receber energia elétrica da rede pública!
                     </p>
                 </article>
                 <div id="howItWorksVideoCol" className="col">

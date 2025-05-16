@@ -44,7 +44,7 @@ function ContactFooter() {
           </div>
           <div id="verRow" className="row">
             <p>
-              v0.1.1-alpha
+              v0.1.2-beta
             </p>
           </div>
         </div>
