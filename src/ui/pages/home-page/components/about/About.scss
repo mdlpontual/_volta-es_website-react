@@ -90,6 +90,7 @@
                     background-color: $voltaBlue;
                     justify-items: center;
                     align-content: center;
+                    display: grid;
                     padding: 10px;
                     img {
                         @include box-reset-default;
