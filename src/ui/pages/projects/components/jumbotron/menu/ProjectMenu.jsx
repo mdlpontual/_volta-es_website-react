@@ -43,18 +43,18 @@ function ProjectMenu({ setIsMenuOpen, slug }) {
               <nav id="prjMenuNav" className="row">
                     <ul id="prjMenuList" className="col">
                         <li>
-                            <Link to="/"><h2 id="navLi" onClick={() => setIsMenuOpen(false)}>PÁGINA INICIAL</h2></Link>
+                            <Link to="/"><h4 id="navLi" onClick={() => setIsMenuOpen(false)}>PÁGINA INICIAL</h4></Link>
                         </li>
                         <li>
-                            <h2>PROJETOS</h2>
+                            <h4>PROJETOS</h4>
                             {projectsList.map(([subSlug, project], i) => (
                                 <Link to={`/${subSlug}`} key={i} style={slug === subSlug ? {color: "orange"} : {color: "white"}}>
-                                    <h2 id="projLi" onClick={() => setIsMenuOpen(false)}>{`- ${project.title}`}</h2>
+                                    <h4 id="projLi" onClick={() => setIsMenuOpen(false)}>{`- ${project.title}`}</h4>
                                 </Link>
                             ))}
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#ppFooterCon" onClick={() => setIsMenuOpen(false)}>CONTATO</a></h2>
+                            <h4 id="navLi"><a href="#ppFooterCon" onClick={() => setIsMenuOpen(false)}>CONTATO</a></h4>
                         </li>
                     </ul>
                 </nav>

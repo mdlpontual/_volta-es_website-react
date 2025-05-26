@@ -28,7 +28,7 @@
     //border: $gb-con_5-sol-red;
     height: 220vh;
     height: 220svh;
-    min-height: 1300px;
+    min-height: 1440px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -70,8 +70,7 @@
                     //border: $gb-col_2-sol-cyn;
                     background-color: $transGrey;
                     align-content: center;
-                    padding-left: 50px;
-                    padding-right: 50px;
+                    padding: 12px 50px 0px 50px;
                 }
                 #voltaImgBox {
                     @include box-reset-default;
