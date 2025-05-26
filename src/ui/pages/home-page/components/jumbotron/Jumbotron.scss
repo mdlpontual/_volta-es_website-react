@@ -5,7 +5,7 @@
     //border: $gb-con_5-sol-red;
     height: 100vh;
     height: 100svh;
-    min-height: 960px;
+    min-height: 680px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 100%;
@@ -176,7 +176,7 @@
                     }
                 }
             }
-            h2:hover {
+            h3:hover {
                 color: $sunOrange;
                 cursor: pointer;
                 transition: color 0.2s ease-in-out;

@@ -33,14 +33,14 @@ const projectsData = {
         description: "Foi com muita satisfação que entregamos este sistema solar em um condomínio na beira mar de Maria Farinha. A geração de energia elétrica abastece todo a área comum do condomínio com 107 módulos e 51,1 kWp de potencia total instalada. A volta também instalou sistemas menores em duas residências no mesmo condominio."
     },
     fazendaCamarão: {
-        title: "PROJETO MOJEIRO",
+        title: "PROJETO MOGEIRO",
         subtitle: "Fazenda de carcinicultura - Paraíba",
         year: "2019",
         modules: "72 módulos",
         powerOutput: "25 kWp",
         images: [IMG.FCAM_00, IMG.FCAM_01, IMG.FCAM_02, IMG.FCAM_03],
-        menuPage: "mojeiro",
-        description: "Projeto Mojeiro - É uma usina fotovoltaica de solo que gera energia limpa e renovável para uma fazenda de criação de camarão (carcinicultura) no interior da Paraíba."
+        menuPage: "mogeiro",
+        description: "Projeto Mogeiro - É uma usina fotovoltaica de solo que gera energia limpa e renovável para uma fazenda de criação de camarão (carcinicultura) no interior da Paraíba."
     },
     projetosAldeia: {
         title: "PROJETOS EM ALDEIA",

@@ -43,21 +43,21 @@ function Menu({ setIsMenuOpen }) {
               <nav id="menuNav" className="row">
                     <ul id="menuList" className="col">
                         <li>
-                            <h2 id="navLi"><a href="#aboutRow" onClick={() => setIsMenuOpen(false)}>SOBRE A VOLTA</a></h2>
+                            <h3 id="navLi"><a href="#aboutRow" onClick={() => setIsMenuOpen(false)}>SOBRE A VOLTA</a></h3>
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#infoNavMenuCon" onClick={() => setIsMenuOpen(false)}>SOBRE ENERGIA SOLAR</a></h2>
-                            <h2 id="projLi"><a href="#prjPhasesRow" onClick={() => setIsMenuOpen(false)}>- ETAPAS DO PROJETO</a></h2>
-                            <h2 id="projLi"><a href="#howItWorksRow" onClick={() => setIsMenuOpen(false)}>- COMO FUNCIONA?</a></h2>
+                            <h3 id="navLi"><a href="#infoNavMenuCon" onClick={() => setIsMenuOpen(false)}>SOBRE ENERGIA SOLAR</a></h3>
+                            <h3 id="projLi"><a href="#prjPhasesRow" onClick={() => setIsMenuOpen(false)}>- ETAPAS DO PROJETO</a></h3>
+                            <h3 id="projLi"><a href="#howItWorksRow" onClick={() => setIsMenuOpen(false)}>- COMO FUNCIONA?</a></h3>
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#projectNavHeadRow" onClick={() => setIsMenuOpen(false)}>PROJETOS</a></h2>
+                            <h3 id="navLi"><a href="#projectNavHeadRow" onClick={() => setIsMenuOpen(false)}>PROJETOS</a></h3>
                             {projectsList.map(([slug, project], i) => (
-                                <Link to={`/${slug}`} key={i}><h2 id="projLi">{`- ${project.title}`}</h2></Link>
+                                <Link to={`/${slug}`} key={i}><h3 id="projLi">{`- ${project.title}`}</h3></Link>
                             ))}
                         </li>
                         <li>
-                            <h2 id="navLi"><a href="#hpFooterCon" onClick={() => setIsMenuOpen(false)}>CONTATO</a></h2>
+                            <h3 id="navLi"><a href="#hpFooterCon" onClick={() => setIsMenuOpen(false)}>CONTATO</a></h3>
                         </li>
                     </ul>
                 </nav>
