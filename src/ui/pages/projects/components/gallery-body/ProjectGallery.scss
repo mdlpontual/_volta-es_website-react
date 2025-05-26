@@ -9,6 +9,7 @@
         //border: $gb-row_5-sol-ylw;
         height: 100vh;
         height: 100svh;
+        min-height: 720px;
         width: 100%;
         padding: 50px 25px;
         justify-content: center;
@@ -51,6 +52,7 @@
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
             height: fit-content;
+            min-height: fit-content;
             width: 100%;
             padding: 50px 25px;
             justify-content: center;
