@@ -5,6 +5,7 @@
     //border: $gb-con_5-sol-red;
     height: 110vh;
     height: 110svh;
+    min-height: 720px;
     position: relative;
     justify-items: center;
     #infoNavMenuRow {
@@ -34,7 +35,8 @@
                 #nossosProjetosCol {
                     @include box-reset-default;
                     //border: $gb-col_5-sol-blu;
-                    height: 600px;
+                    height: 67%;
+                    max-height: 600px;
                     min-width: 100px;
                     border-radius: 50px;
                     background-color: $transGrey;
@@ -129,6 +131,7 @@
     //border: $gb-con_5-sol-red;
     height: 330vh;
     height: 330lvh;
+    min-height: 2160px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 100%;
@@ -155,6 +158,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: calc((100% / 3) - 25px);
+        min-height: 720px;
         align-items: center;
         text-align: center;
         #prjPhasesCol {
@@ -173,6 +177,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: calc((100% / 3) - 25px);
+        min-height: 720px;
         align-items: center;
         #howItWorksCol {
             @include box-reset-default;
@@ -225,7 +230,8 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: calc((100% / 3) - 25px);
-        padding: 0 25px 100px 25px;
+        min-height: 720px;
+        padding: 0 25px 0px 25px;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -266,29 +272,6 @@
                             font-weight: 100;
                         }
                     }
-                }
-            }
-            #checkOurProjectsRow {
-                @include box-reset-default;
-                //border: $gb-row_2-sol-org;
-                height: 150px;
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                justify-content: center;
-                #arrowDownCol {
-                    @include box-reset-default;
-                    // border: $gb-col_2-sol-cyn;
-                    border-radius: 50%;
-                    height: 75px;
-                    padding: 10px;
-                    img {
-                        height: 100%;
-                    }
-                }
-                #arrowDownCol:hover {
-                    background-color: $voltaBlue;
-                    transition: background-color 0.1s ease-in;
                 }
             }
         }
@@ -498,22 +481,21 @@
             @include box-reset-default;
             //border: $gb-row_5-sol-ylw;
             height: fit-content;
-            padding: 150px 15px 0px 15px;
+            padding: 0 25px 0px 25px;
             align-items: center;
             justify-content: center;
             text-align: center;
             #letsTalkCol {
                 @include box-reset-default;
                 //border: $gb-col_5-sol-blu;
-                height: 100%;
+                height: fit-content;
                 max-width: 1380px;
                 position: relative;
                 justify-items: center;
-                margin-top: 75px;
                 #letsTalkTextRow {
                     @include box-reset-default;
                     //border: $gb-row_2-sol-org;
-                    height: 100%;
+                    height: fit-content;
                     width: 100%;
                     border-radius: 50px;
                     padding: 15px;

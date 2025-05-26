@@ -5,6 +5,7 @@
     //border: $gb-con_5-sol-red;
     height: 110vh;
     height: 110svh;
+    min-height: 720px;
     #logoRow {
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
@@ -27,6 +28,7 @@
     //border: $gb-con_5-sol-red;
     height: 220vh;
     height: 220svh;
+    min-height: 1440px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -52,6 +54,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 45%;
+        min-height: 720px;
         #aboutCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -114,6 +117,7 @@
         @include box-reset-default;
         //border: $gb-row_5-sol-ylw;
         height: 50%;
+        min-height: 720px;
         #sustCol {
             @include box-reset-default;
             //border: $gb-col_5-sol-blu;
@@ -121,12 +125,13 @@
             #sustTextRow {
                 @include box-reset-default;
                 //border: $gb-row_2-sol-org;
-                height: fit-content;
+                max-height: fit-content;
                 justify-content: center;
                 background-color: $transGrey;
                 #sustTextCol {
                     @include box-reset-default;
                     //border: $gb-col_2-sol-cyn;
+                    min-height: 720px;
                     max-width: 1380px;
                     padding: 50px;
                     text-align: justify;

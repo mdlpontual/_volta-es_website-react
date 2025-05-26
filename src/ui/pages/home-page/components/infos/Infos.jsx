@@ -110,12 +110,6 @@ function Infos() {
                 </address>
               </div>
             </div>
-            <div id="checkOurProjectsRow" className="row fade-in-target" style={{ "--delay": `${1 * 150}ms` }}>
-              <h5>Confira nossa galeria de projetos realizados!</h5>
-              <div id="arrowDownCol" className="col-auto">
-                <a href="#projectNavHeadRow"><img src={IMG.arrowDownIcon} alt="seta para baixo" /></a>
-              </div>
-            </div>
           </article>
         </div>
       </section>
